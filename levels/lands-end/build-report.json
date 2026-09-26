@@ -1,0 +1,68 @@
+{
+  "id": "lands-end",
+  "steps": [
+    {
+      "name": "voxelize shell",
+      "seconds": 5.9
+    },
+    {
+      "name": "solid fill + signed distance",
+      "seconds": 0.9
+    },
+    {
+      "name": "rock bounds",
+      "seconds": 0
+    },
+    {
+      "name": "play plane",
+      "seconds": 0.1
+    },
+    {
+      "name": "density grid",
+      "seconds": 0.2
+    },
+    {
+      "name": "spawns",
+      "seconds": 0.2
+    },
+    {
+      "name": "colours",
+      "seconds": 2.9
+    }
+  ],
+  "seconds": 10.3,
+  "voxel": {
+    "cells": 1757184,
+    "solidCells": 333580
+  },
+  "density": {
+    "dims": [
+      207,
+      65,
+      135
+    ],
+    "bytes": 1816425,
+    "solidFraction": 0.1589
+  },
+  "spawns": {
+    "candidates": 1453,
+    "picked": 16
+  },
+  "splat": {
+    "lodCounts": [
+      1575880,
+      787940,
+      393970,
+      189106,
+      94553,
+      47276
+    ],
+    "totalBytes": 62147355,
+    "coarsestChunkBytes": 1809763
+  },
+  "budgets": {
+    "coarsestLodUnder500k": true,
+    "firstChunkUnder3MB": true,
+    "levelUnderBudget": true
+  }
+}
