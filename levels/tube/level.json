@@ -1,0 +1,2348 @@
+{
+    "version": 1,
+    "id": "tube",
+    "name": {
+        "ru": "Профилактика",
+        "en": "Maintenance Day"
+    },
+    "source": {
+        "title": "Профилактика",
+        "author": "Нейробой (tools/level-tube.ts)",
+        "url": "",
+        "license": "own work",
+        "licenseUrl": ""
+    },
+    "teams": 4,
+    "waterLevel": 0.5,
+    "playPlaneZ": 0,
+    "cutaway": false,
+    "arena3d": true,
+    "density": {
+        "origin": [-24, -2, -20],
+        "voxel": 0.25,
+        "dims": [192, 56, 160],
+        "scale": 0.03125,
+        "encoding": "int8",
+        "layout": "x-fastest",
+        "file": "density.gz.bin",
+        "compression": "gzip",
+        "edge": 9.5,
+        "solidFraction": 0.196
+    },
+    "wallsSeeThrough": true,
+    "meshFloor": 0.4,
+    "meshMerge": true,
+    "ground": {
+        "file": "ground.png",
+        "cell": 0.5,
+        "dims": [96, 28, 80],
+        "tiles": [5, 16],
+        "set": "tube",
+        "note": "r the solder mask with its copper traces, g the silkscreen side, a the darker phenolic (the dome, the trench, the mound); rock (the laminate) where they add up to less than 1 (tools/level-tube.ts)"
+    },
+    "mood": {
+        "swing": [0.585, 0.625],
+        "cycle": 900,
+        "weather": "clear",
+        "sky": "sunset",
+        "skyRotation": 180
+    },
+    "propCollision": true,
+    "rules": {
+        "zones": [
+            {
+                "id": "yoke",
+                "shape": "cylinder",
+                "x": 0,
+                "y": 2.5,
+                "z": -12,
+                "r": 6,
+                "h": 8,
+                "curl": 4,
+                "fade": true
+            },
+            {
+                "id": "anode",
+                "shape": "cylinder",
+                "x": 0,
+                "y": 8.102,
+                "z": -19.2,
+                "r": 3.5,
+                "h": 5,
+                "damage": {
+                    "perTurn": 10
+                }
+            }
+        ]
+    },
+    "style": "ink87",
+    "ink": {
+        "sun": {
+            "azimuth": 180,
+            "elevation": 22
+        },
+        "sky": "cabinet",
+        "fog": [16, 80],
+        "exposure": 1.15,
+        "fill": 0.18,
+        "toon": [0.04, 0.302],
+        "toe": 1.6
+    },
+    "floors": true,
+    "roofCut": {
+        "boxes": [[-13, 8.2, 13, 9.8]]
+    },
+    "ambience": {
+        "surf": false,
+        "glow": [
+            {
+                "pos": [0, 10.702, -19.2],
+                "colour": [0.6, 0.8, 1]
+            },
+            {
+                "pos": [7.5, 5.9, -11.5],
+                "colour": [1, 0.45, 0.2]
+            }
+        ],
+        "dust": [
+            {
+                "x": -10,
+                "z": -8,
+                "y": 2.5,
+                "r": 7
+            },
+            {
+                "x": 10,
+                "z": -8,
+                "y": 2.5,
+                "r": 7
+            },
+            {
+                "x": 10,
+                "z": 8,
+                "y": 2.5,
+                "r": 7
+            },
+            {
+                "x": -10,
+                "z": 8,
+                "y": 2.5,
+                "r": 7
+            },
+            {
+                "x": 0,
+                "z": -8,
+                "y": 3.5,
+                "r": 8
+            }
+        ]
+    },
+    "sea": {
+        "calm": true,
+        "shallow": [0.14, 0.1, 0.07],
+        "deep": [0.05, 0.035, 0.025],
+        "depthFade": 0.6
+    },
+    "spawns": [
+        [-8, 2.52, -5.6],
+        [-12.4, 2.52, -7.4],
+        [-5.6, 2.52, -7.6],
+        [-11.2, 2.52, -10.6],
+        [8, 2.52, -5.6],
+        [12.4, 2.52, -7.4],
+        [5.6, 2.52, -7.6],
+        [11.2, 2.52, -10.6],
+        [8, 2.52, 5.6],
+        [12.4, 2.52, 7.4],
+        [5.6, 2.52, 7.6],
+        [11.2, 2.52, 10.6],
+        [-8, 2.52, 5.6],
+        [-12.4, 2.52, 7.4],
+        [-5.6, 2.52, 7.6],
+        [-11.2, 2.52, 10.6]
+    ],
+    "spawnGroups": [
+        [0, 1, 2, 3],
+        [4, 5, 6, 7],
+        [8, 9, 10, 11],
+        [12, 13, 14, 15]
+    ],
+    "spawnCover": [12, 457, 25, 733, 12, 447, 91, 721, 0, 463, 19, 493, 0, 463, 19, 493],
+    "light": {
+        "direction": [0, -0.37, 0.93],
+        "color": [1, 0.72, 0.45],
+        "intensity": 1
+    },
+    "colours": {
+        "ambient": [0.5, 0.36, 0.26],
+        "innerRock": [0.5, 0.36, 0.2]
+    },
+    "bounds": {
+        "min": [-24, 0.6, -20],
+        "max": [24, 11.648, 20]
+    },
+    "props": [
+        {
+            "type": "tuner_tin",
+            "pos": [-12.5, 2.48, -4.8],
+            "yaw": -180,
+            "scale": 1
+        },
+        {
+            "type": "tuner_tin",
+            "pos": [12.5, 2.48, -4.8],
+            "yaw": -180,
+            "scale": 1
+        },
+        {
+            "type": "tuner_tin",
+            "pos": [12.5, 2.48, 4.8],
+            "yaw": 0,
+            "scale": 1
+        },
+        {
+            "type": "tuner_tin",
+            "pos": [-12.5, 2.48, 4.8],
+            "yaw": 0,
+            "scale": 1
+        },
+        {
+            "type": "heatsink_fins",
+            "pos": [-17.7, 2.48, -4.8],
+            "yaw": 90,
+            "scale": 1
+        },
+        {
+            "type": "heatsink_fins",
+            "pos": [17.7, 2.48, -4.8],
+            "yaw": -90,
+            "scale": 1
+        },
+        {
+            "type": "heatsink_fins",
+            "pos": [17.7, 2.48, 4.8],
+            "yaw": -90,
+            "scale": 1
+        },
+        {
+            "type": "heatsink_fins",
+            "pos": [-17.7, 2.48, 4.8],
+            "yaw": 90,
+            "scale": 1
+        },
+        {
+            "type": "ic_dip_40",
+            "pos": [-6, 2.48, -3],
+            "yaw": -180,
+            "scale": 1
+        },
+        {
+            "type": "ic_dip_40",
+            "pos": [6, 2.48, -3],
+            "yaw": -180,
+            "scale": 1
+        },
+        {
+            "type": "ic_dip_40",
+            "pos": [6, 2.48, 3],
+            "yaw": 0,
+            "scale": 1
+        },
+        {
+            "type": "ic_dip_40",
+            "pos": [-6, 2.48, 3],
+            "yaw": 0,
+            "scale": 1
+        },
+        {
+            "type": "ic_dip_16",
+            "pos": [-3.4, 2.48, -6.5],
+            "yaw": -90,
+            "scale": 1
+        },
+        {
+            "type": "ic_dip_16",
+            "pos": [3.4, 2.48, -6.5],
+            "yaw": 90,
+            "scale": 1
+        },
+        {
+            "type": "ic_dip_16",
+            "pos": [3.4, 2.48, 6.5],
+            "yaw": 90,
+            "scale": 1
+        },
+        {
+            "type": "ic_dip_16",
+            "pos": [-3.4, 2.48, 6.5],
+            "yaw": -90,
+            "scale": 1
+        },
+        {
+            "type": "cap_big_a",
+            "pos": [-17.8, 2.48, -8],
+            "yaw": -180,
+            "scale": 1
+        },
+        {
+            "type": "cap_big_a",
+            "pos": [17.8, 2.48, -8],
+            "yaw": -180,
+            "scale": 1
+        },
+        {
+            "type": "cap_big_a",
+            "pos": [17.8, 2.48, 8],
+            "yaw": 0,
+            "scale": 1
+        },
+        {
+            "type": "cap_big_a",
+            "pos": [-17.8, 2.48, 8],
+            "yaw": 0,
+            "scale": 1
+        },
+        {
+            "type": "cap_big_b",
+            "pos": [-13, 2.48, -13.5],
+            "yaw": -180,
+            "scale": 1
+        },
+        {
+            "type": "cap_big_b",
+            "pos": [13, 2.48, -13.5],
+            "yaw": -180,
+            "scale": 1
+        },
+        {
+            "type": "cap_big_b",
+            "pos": [13, 2.48, 13.5],
+            "yaw": 0,
+            "scale": 1
+        },
+        {
+            "type": "cap_big_b",
+            "pos": [-13, 2.48, 13.5],
+            "yaw": 0,
+            "scale": 1
+        },
+        {
+            "type": "mains_transformer",
+            "pos": [-17.4, 2.48, -12.8],
+            "yaw": -180,
+            "scale": 1
+        },
+        {
+            "type": "mains_transformer",
+            "pos": [17.4, 2.48, -12.8],
+            "yaw": -180,
+            "scale": 1
+        },
+        {
+            "type": "mains_transformer",
+            "pos": [17.4, 2.48, 12.8],
+            "yaw": 0,
+            "scale": 1
+        },
+        {
+            "type": "mains_transformer",
+            "pos": [-17.4, 2.48, 12.8],
+            "yaw": 0,
+            "scale": 1
+        },
+        {
+            "type": "flyback",
+            "pos": [7.5, 2.48, -11.5],
+            "yaw": 0,
+            "scale": 1
+        },
+        {
+            "type": "speaker_cone",
+            "pos": [-7.5, 2.48, -11.5],
+            "yaw": 0,
+            "scale": 1
+        },
+        {
+            "type": "crt_neck_gun",
+            "pos": [0, 2.48, -9],
+            "yaw": 0,
+            "scale": 1
+        },
+        {
+            "type": "anode_cap",
+            "pos": [0, 10.082, -19.2],
+            "yaw": 0,
+            "scale": 1
+        },
+        {
+            "type": "ribbon_cable",
+            "pos": [-7.5, 2.48, 9],
+            "yaw": 0,
+            "scale": 1
+        },
+        {
+            "type": "ribbon_cable",
+            "pos": [7.5, 2.48, 9],
+            "yaw": 0,
+            "scale": 1
+        },
+        {
+            "type": "dust_bunny_a",
+            "pos": [-10.142, 0.38, 18.109],
+            "yaw": 112.244,
+            "scale": 1.077
+        },
+        {
+            "type": "dust_bunny_a",
+            "pos": [3.224, 0.38, 18.116],
+            "yaw": 177.313,
+            "scale": 1.529
+        },
+        {
+            "type": "dust_bunny_b",
+            "pos": [16.858, 0.38, 16.045],
+            "yaw": 172.493,
+            "scale": 0.836
+        },
+        {
+            "type": "dust_bunny_b",
+            "pos": [-23.084, 0.38, 18.216],
+            "yaw": 203.673,
+            "scale": 1.176
+        },
+        {
+            "type": "dust_bunny_a",
+            "pos": [21.797, 0.38, 12.534],
+            "yaw": 146.346,
+            "scale": 1.363
+        },
+        {
+            "type": "dust_bunny_a",
+            "pos": [-7.216, 0.38, 16.593],
+            "yaw": 149.096,
+            "scale": 0.987
+        },
+        {
+            "type": "dust_bunny_b",
+            "pos": [21.4, 0.38, -1.069],
+            "yaw": 85.112,
+            "scale": 1.168
+        },
+        {
+            "type": "dust_bunny_b",
+            "pos": [-22.164, 0.38, -3.768],
+            "yaw": 163.996,
+            "scale": 1.523
+        },
+        {
+            "type": "dust_bunny_b",
+            "pos": [14.154, 0.38, 16.12],
+            "yaw": 304.809,
+            "scale": 1.334
+        },
+        {
+            "type": "dust_bunny_b",
+            "pos": [9.114, 0.38, 18.304],
+            "yaw": 313.767,
+            "scale": 1.177
+        },
+        {
+            "type": "dust_bunny_a",
+            "pos": [3.252, 0.38, 18.944],
+            "yaw": 160.504,
+            "scale": 0.805
+        },
+        {
+            "type": "dust_bunny_b",
+            "pos": [22.184, 0.38, -8.179],
+            "yaw": 247.927,
+            "scale": 1.527
+        },
+        {
+            "type": "dust_bunny_b",
+            "pos": [-22.677, 0.38, 7.519],
+            "yaw": 201.77,
+            "scale": 1.037
+        },
+        {
+            "type": "dust_bunny_b",
+            "pos": [-22.302, 0.38, -7.614],
+            "yaw": 242.639,
+            "scale": 1.028
+        },
+        {
+            "type": "dust_bunny_a",
+            "pos": [-13.846, 0.38, 17.543],
+            "yaw": 272.926,
+            "scale": 1.287
+        },
+        {
+            "type": "dust_bunny_a",
+            "pos": [5.037, 0.38, 18.03],
+            "yaw": 224.499,
+            "scale": 1.157
+        },
+        {
+            "type": "dust_bunny_a",
+            "pos": [3.002, 0.38, 17.569],
+            "yaw": 32.274,
+            "scale": 1.388
+        },
+        {
+            "type": "dust_bunny_a",
+            "pos": [22.486, 0.38, 16.95],
+            "yaw": 353.69,
+            "scale": 0.91
+        },
+        {
+            "type": "dust_bunny_b",
+            "pos": [21.8, 0.38, 13.7],
+            "yaw": 103.695,
+            "scale": 1.43
+        },
+        {
+            "type": "dust_bunny_a",
+            "pos": [23.3, 0.38, -4.526],
+            "yaw": 333.961,
+            "scale": 1.584
+        },
+        {
+            "type": "dust_bunny_b",
+            "pos": [21.099, 0.38, 1.339],
+            "yaw": 290.471,
+            "scale": 1.527
+        },
+        {
+            "type": "dust_bunny_a",
+            "pos": [-17.91, 0.38, 17.147],
+            "yaw": 324.238,
+            "scale": 1.33
+        },
+        {
+            "type": "dust_bunny_a",
+            "pos": [21.923, 0.38, -13.847],
+            "yaw": 218.426,
+            "scale": 1.493
+        },
+        {
+            "type": "dust_bunny_b",
+            "pos": [-22.159, 0.38, -3.738],
+            "yaw": 322.059,
+            "scale": 1.217
+        },
+        {
+            "type": "dust_bunny_a",
+            "pos": [5.148, 0.38, 18.289],
+            "yaw": 199.901,
+            "scale": 0.986
+        },
+        {
+            "type": "dust_bunny_a",
+            "pos": [22.924, 0.38, 5.029],
+            "yaw": 7.001,
+            "scale": 0.953
+        },
+        {
+            "type": "cabinet_shell",
+            "pos": [0, -0.52, 0],
+            "yaw": 0,
+            "scale": 1
+        },
+        {
+            "type": "resistor",
+            "pos": [-18.854, 2.48, -16.678],
+            "yaw": 2.281,
+            "scale": 1.14
+        },
+        {
+            "type": "jumper",
+            "pos": [-19.242, 2.48, -10.127],
+            "yaw": 91.687,
+            "scale": 1.032
+        },
+        {
+            "type": "diode",
+            "pos": [-19.103, 2.48, 3.587],
+            "yaw": 11.9,
+            "scale": 0.98
+        },
+        {
+            "type": "resistor",
+            "pos": [-19.01, 2.48, 3.898],
+            "yaw": 90.454,
+            "scale": 1.041
+        },
+        {
+            "type": "transistor",
+            "pos": [-19.189, 2.48, 4.787],
+            "yaw": -1.291,
+            "scale": 1.025
+        },
+        {
+            "type": "resistor",
+            "pos": [-19.208, 2.48, 6.26],
+            "yaw": 91.999,
+            "scale": 1.071
+        },
+        {
+            "type": "cap_ceramic",
+            "pos": [-19.213, 2.48, 9.949],
+            "yaw": 87.101,
+            "scale": 1.135
+        },
+        {
+            "type": "diode",
+            "pos": [-18.25, 2.48, -9.829],
+            "yaw": -2.012,
+            "scale": 1.132
+        },
+        {
+            "type": "transistor",
+            "pos": [-18.483, 2.48, -1.001],
+            "yaw": 90.136,
+            "scale": 1.071
+        },
+        {
+            "type": "cap_ceramic",
+            "pos": [-18.061, 2.48, 9.594],
+            "yaw": 5.839,
+            "scale": 0.966
+        },
+        {
+            "type": "resistor",
+            "pos": [-17.477, 2.48, -15.634],
+            "yaw": -0.976,
+            "scale": 0.921
+        },
+        {
+            "type": "diode",
+            "pos": [-17.456, 2.48, -1.531],
+            "yaw": 202.857,
+            "scale": 1.14
+        },
+        {
+            "type": "transistor",
+            "pos": [-17.674, 2.48, 1.516],
+            "yaw": -0.312,
+            "scale": 1.026
+        },
+        {
+            "type": "diode",
+            "pos": [-17.797, 2.48, 1.786],
+            "yaw": 92.362,
+            "scale": 1.107
+        },
+        {
+            "type": "resistor",
+            "pos": [-17.134, 2.48, -15.598],
+            "yaw": -2.859,
+            "scale": 0.911
+        },
+        {
+            "type": "jumper",
+            "pos": [-17.051, 2.48, -1.446],
+            "yaw": 2.92,
+            "scale": 1.136
+        },
+        {
+            "type": "resistor",
+            "pos": [-16.256, 2.48, -10.109],
+            "yaw": 246.828,
+            "scale": 1.141
+        },
+        {
+            "type": "coil_choke",
+            "pos": [-16.08, 2.48, -9.326],
+            "yaw": -1.723,
+            "scale": 0.925
+        },
+        {
+            "type": "resistor",
+            "pos": [-16.301, 2.48, 3.424],
+            "yaw": -0.471,
+            "scale": 1.122
+        },
+        {
+            "type": "jumper",
+            "pos": [-16.209, 2.48, 4.596],
+            "yaw": 88.135,
+            "scale": 1.107
+        },
+        {
+            "type": "resistor",
+            "pos": [-14.657, 2.48, -15.623],
+            "yaw": -0.15,
+            "scale": 1.133
+        },
+        {
+            "type": "cap_ceramic",
+            "pos": [-14.768, 2.48, -9.151],
+            "yaw": 1.083,
+            "scale": 1.137
+        },
+        {
+            "type": "resistor",
+            "pos": [-15.014, 2.48, -8.27],
+            "yaw": 329.433,
+            "scale": 0.944
+        },
+        {
+            "type": "jumper",
+            "pos": [-14.598, 2.48, 2.789],
+            "yaw": 2.722,
+            "scale": 0.947
+        },
+        {
+            "type": "resistor",
+            "pos": [-14.953, 2.48, 11.244],
+            "yaw": -0.139,
+            "scale": 1.148
+        },
+        {
+            "type": "transistor",
+            "pos": [-14.986, 2.48, 13.411],
+            "yaw": 2.441,
+            "scale": 0.96
+        },
+        {
+            "type": "diode",
+            "pos": [-14.317, 2.48, -15.25],
+            "yaw": 256.027,
+            "scale": 1.045
+        },
+        {
+            "type": "coil_choke",
+            "pos": [-14.016, 2.48, -1.544],
+            "yaw": 1.612,
+            "scale": 1.092
+        },
+        {
+            "type": "cap_ceramic",
+            "pos": [-14.226, 2.48, -0.691],
+            "yaw": 1.042,
+            "scale": 1.08
+        },
+        {
+            "type": "transistor",
+            "pos": [-13.569, 2.48, -16.674],
+            "yaw": 90.715,
+            "scale": 0.989
+        },
+        {
+            "type": "coil_choke",
+            "pos": [-13.431, 2.48, -10.125],
+            "yaw": -1.387,
+            "scale": 1.128
+        },
+        {
+            "type": "transistor",
+            "pos": [-13.535, 2.48, -2.759],
+            "yaw": 87.377,
+            "scale": 0.991
+        },
+        {
+            "type": "cap_ceramic",
+            "pos": [-13.199, 2.48, 10.476],
+            "yaw": 88.788,
+            "scale": 0.903
+        },
+        {
+            "type": "coil_choke",
+            "pos": [-12.51, 2.48, -11.823],
+            "yaw": 88.855,
+            "scale": 0.986
+        },
+        {
+            "type": "coil_choke",
+            "pos": [-12.622, 2.48, -0.683],
+            "yaw": 89.104,
+            "scale": 1.12
+        },
+        {
+            "type": "coil_choke",
+            "pos": [-12.629, 2.48, 0.108],
+            "yaw": 90.462,
+            "scale": 1.128
+        },
+        {
+            "type": "jumper",
+            "pos": [-12.534, 2.48, 1.06],
+            "yaw": 88.23,
+            "scale": 0.963
+        },
+        {
+            "type": "jumper",
+            "pos": [-12.683, 2.48, 2.864],
+            "yaw": -0.788,
+            "scale": 0.999
+        },
+        {
+            "type": "transistor",
+            "pos": [-12.606, 2.48, 11.722],
+            "yaw": 0.226,
+            "scale": 1.114
+        },
+        {
+            "type": "transistor",
+            "pos": [-12.026, 2.48, -19.138],
+            "yaw": 89.76,
+            "scale": 0.985
+        },
+        {
+            "type": "resistor",
+            "pos": [-12.168, 2.48, -11.951],
+            "yaw": 92.097,
+            "scale": 0.923
+        },
+        {
+            "type": "diode",
+            "pos": [-11.851, 2.48, -11.525],
+            "yaw": 2.388,
+            "scale": 0.974
+        },
+        {
+            "type": "diode",
+            "pos": [-12.098, 2.48, -9.725],
+            "yaw": 87.518,
+            "scale": 0.911
+        },
+        {
+            "type": "coil_choke",
+            "pos": [-11.889, 2.48, 0.358],
+            "yaw": -2.104,
+            "scale": 1.124
+        },
+        {
+            "type": "coil_choke",
+            "pos": [-11.945, 2.48, 2.856],
+            "yaw": 261.772,
+            "scale": 1.028
+        },
+        {
+            "type": "resistor",
+            "pos": [-11.16, 2.48, -19.168],
+            "yaw": 88.155,
+            "scale": 1.095
+        },
+        {
+            "type": "resistor",
+            "pos": [-11.192, 2.48, -11.873],
+            "yaw": -1.809,
+            "scale": 1.144
+        },
+        {
+            "type": "cap_ceramic",
+            "pos": [-11.501, 2.48, -9.337],
+            "yaw": 1.648,
+            "scale": 0.916
+        },
+        {
+            "type": "diode",
+            "pos": [-11.168, 2.48, -2.217],
+            "yaw": 90.731,
+            "scale": 0.921
+        },
+        {
+            "type": "resistor",
+            "pos": [-11.297, 2.48, -0.593],
+            "yaw": 2.805,
+            "scale": 1.109
+        },
+        {
+            "type": "cap_ceramic",
+            "pos": [-11.317, 2.48, 0.816],
+            "yaw": 0.737,
+            "scale": 0.976
+        },
+        {
+            "type": "resistor",
+            "pos": [-11.402, 2.48, 12.383],
+            "yaw": 222.049,
+            "scale": 0.999
+        },
+        {
+            "type": "diode",
+            "pos": [-10.522, 2.48, -11.816],
+            "yaw": 2.36,
+            "scale": 1.018
+        },
+        {
+            "type": "cap_ceramic",
+            "pos": [-10.824, 2.48, -9.083],
+            "yaw": 1.781,
+            "scale": 1.132
+        },
+        {
+            "type": "transistor",
+            "pos": [-10.466, 2.48, -1.659],
+            "yaw": -2.992,
+            "scale": 1.142
+        },
+        {
+            "type": "resistor",
+            "pos": [-10.641, 2.48, 9.469],
+            "yaw": 90.291,
+            "scale": 1.022
+        },
+        {
+            "type": "cap_ceramic",
+            "pos": [-10.484, 2.48, 13.062],
+            "yaw": 89.587,
+            "scale": 0.955
+        },
+        {
+            "type": "transistor",
+            "pos": [-9.953, 2.48, 13.207],
+            "yaw": 92.55,
+            "scale": 1.056
+        },
+        {
+            "type": "cap_ceramic",
+            "pos": [-9.965, 2.48, 14.049],
+            "yaw": -2.258,
+            "scale": 0.984
+        },
+        {
+            "type": "coil_choke",
+            "pos": [-9.225, 2.48, -15.475],
+            "yaw": 11.249,
+            "scale": 1.109
+        },
+        {
+            "type": "coil_choke",
+            "pos": [-9.373, 2.48, -2.699],
+            "yaw": 11.961,
+            "scale": 0.973
+        },
+        {
+            "type": "resistor",
+            "pos": [-9.241, 2.48, 9.086],
+            "yaw": -0.325,
+            "scale": 1.069
+        },
+        {
+            "type": "transistor",
+            "pos": [-9.111, 2.48, 13.899],
+            "yaw": 91.268,
+            "scale": 1.003
+        },
+        {
+            "type": "resistor",
+            "pos": [-8.745, 2.48, -17.613],
+            "yaw": 172.454,
+            "scale": 0.955
+        },
+        {
+            "type": "transistor",
+            "pos": [-8.437, 2.48, -7.213],
+            "yaw": -2.305,
+            "scale": 1.089
+        },
+        {
+            "type": "diode",
+            "pos": [-8.668, 2.48, -4.226],
+            "yaw": 88.012,
+            "scale": 1.064
+        },
+        {
+            "type": "cap_ceramic",
+            "pos": [-8.414, 2.48, 1.33],
+            "yaw": -2.557,
+            "scale": 1.102
+        },
+        {
+            "type": "resistor",
+            "pos": [-8.414, 2.48, 2.23],
+            "yaw": -2.977,
+            "scale": 0.95
+        },
+        {
+            "type": "diode",
+            "pos": [-8.394, 2.48, 2.932],
+            "yaw": -1.685,
+            "scale": 1.048
+        },
+        {
+            "type": "resistor",
+            "pos": [-8.395, 2.48, 7.478],
+            "yaw": 91.23,
+            "scale": 1.15
+        },
+        {
+            "type": "resistor",
+            "pos": [-8.475, 2.48, 10.405],
+            "yaw": 220.371,
+            "scale": 0.929
+        },
+        {
+            "type": "resistor",
+            "pos": [-8.444, 2.48, 13.979],
+            "yaw": 1.686,
+            "scale": 1.071
+        },
+        {
+            "type": "resistor",
+            "pos": [-7.942, 2.48, 1.771],
+            "yaw": 0.291,
+            "scale": 1.11
+        },
+        {
+            "type": "resistor",
+            "pos": [-7.638, 2.48, 8.485],
+            "yaw": 1.483,
+            "scale": 0.945
+        },
+        {
+            "type": "cap_ceramic",
+            "pos": [-8.029, 2.48, 9.679],
+            "yaw": 253.476,
+            "scale": 0.949
+        },
+        {
+            "type": "coil_choke",
+            "pos": [-7.168, 2.48, -16.848],
+            "yaw": 209.606,
+            "scale": 1.03
+        },
+        {
+            "type": "resistor",
+            "pos": [-6.948, 2.48, -1.62],
+            "yaw": -0.217,
+            "scale": 1.04
+        },
+        {
+            "type": "jumper",
+            "pos": [-7.236, 2.48, 3.632],
+            "yaw": 2.27,
+            "scale": 1.033
+        },
+        {
+            "type": "coil_choke",
+            "pos": [-7.036, 2.48, 3.869],
+            "yaw": 1.188,
+            "scale": 0.918
+        },
+        {
+            "type": "resistor",
+            "pos": [-6.97, 2.48, 8.216],
+            "yaw": 89.379,
+            "scale": 1.014
+        },
+        {
+            "type": "resistor",
+            "pos": [-7.293, 2.48, 9.632],
+            "yaw": -0.401,
+            "scale": 1.01
+        },
+        {
+            "type": "diode",
+            "pos": [-6.647, 2.48, 4.071],
+            "yaw": 88.972,
+            "scale": 0.968
+        },
+        {
+            "type": "coil_choke",
+            "pos": [-6.336, 2.48, 9.465],
+            "yaw": 89.674,
+            "scale": 0.962
+        },
+        {
+            "type": "diode",
+            "pos": [-5.675, 2.48, -5.036],
+            "yaw": 2.275,
+            "scale": 1.137
+        },
+        {
+            "type": "resistor",
+            "pos": [-5.943, 2.48, -2.375],
+            "yaw": 253.847,
+            "scale": 1.045
+        },
+        {
+            "type": "resistor",
+            "pos": [-5.895, 2.48, -0.669],
+            "yaw": 0.814,
+            "scale": 1.026
+        },
+        {
+            "type": "transistor",
+            "pos": [-5.582, 2.48, 8.94],
+            "yaw": 282.636,
+            "scale": 0.956
+        },
+        {
+            "type": "diode",
+            "pos": [-5.196, 2.48, 6.013],
+            "yaw": 89.963,
+            "scale": 1.047
+        },
+        {
+            "type": "resistor",
+            "pos": [-5.056, 2.48, 8.937],
+            "yaw": 89.188,
+            "scale": 0.939
+        },
+        {
+            "type": "resistor",
+            "pos": [-4.914, 2.48, 9.914],
+            "yaw": 0.382,
+            "scale": 1.05
+        },
+        {
+            "type": "resistor",
+            "pos": [-4.997, 2.48, 10.346],
+            "yaw": -2.005,
+            "scale": 0.914
+        },
+        {
+            "type": "resistor",
+            "pos": [-4.077, 2.48, -9.239],
+            "yaw": 87.288,
+            "scale": 1.106
+        },
+        {
+            "type": "diode",
+            "pos": [-4.165, 2.48, 4.789],
+            "yaw": 254.541,
+            "scale": 1.147
+        },
+        {
+            "type": "cap_ceramic",
+            "pos": [-4.293, 2.48, 12.313],
+            "yaw": 87.713,
+            "scale": 1.133
+        },
+        {
+            "type": "resistor",
+            "pos": [-3.763, 2.48, 13.002],
+            "yaw": -2.554,
+            "scale": 0.919
+        },
+        {
+            "type": "resistor",
+            "pos": [-3.095, 2.48, -3.042],
+            "yaw": 2.979,
+            "scale": 1.137
+        },
+        {
+            "type": "resistor",
+            "pos": [-2.698, 2.48, 7.463],
+            "yaw": 0.829,
+            "scale": 1.142
+        },
+        {
+            "type": "coil_choke",
+            "pos": [-2.805, 2.48, 8.469],
+            "yaw": 90.415,
+            "scale": 0.983
+        },
+        {
+            "type": "cap_ceramic",
+            "pos": [-2.67, 2.48, 9.555],
+            "yaw": 157.411,
+            "scale": 1.021
+        },
+        {
+            "type": "cap_ceramic",
+            "pos": [-2.709, 2.48, 12.338],
+            "yaw": -0.747,
+            "scale": 0.941
+        },
+        {
+            "type": "jumper",
+            "pos": [-2.282, 2.48, 6.106],
+            "yaw": -0.743,
+            "scale": 1.018
+        },
+        {
+            "type": "transistor",
+            "pos": [-2.416, 2.48, 10.296],
+            "yaw": 92.636,
+            "scale": 1.02
+        },
+        {
+            "type": "coil_choke",
+            "pos": [-2.333, 2.48, 11.681],
+            "yaw": -1.69,
+            "scale": 1.115
+        },
+        {
+            "type": "resistor",
+            "pos": [-1.492, 2.48, 13.162],
+            "yaw": 2.816,
+            "scale": 0.918
+        },
+        {
+            "type": "resistor",
+            "pos": [-0.801, 2.48, 13.072],
+            "yaw": 2.552,
+            "scale": 1.136
+        },
+        {
+            "type": "transistor",
+            "pos": [-0.084, 2.48, 13.84],
+            "yaw": 92.143,
+            "scale": 1.069
+        },
+        {
+            "type": "diode",
+            "pos": [0.776, 2.48, -4.324],
+            "yaw": 26.535,
+            "scale": 0.935
+        },
+        {
+            "type": "cap_ceramic",
+            "pos": [0.597, 2.48, 13.803],
+            "yaw": -0.271,
+            "scale": 0.925
+        },
+        {
+            "type": "diode",
+            "pos": [1.061, 2.48, -4.201],
+            "yaw": 2.421,
+            "scale": 1.09
+        },
+        {
+            "type": "coil_choke",
+            "pos": [1.056, 2.48, 5.354],
+            "yaw": 89.499,
+            "scale": 0.916
+        },
+        {
+            "type": "cap_ceramic",
+            "pos": [2.009, 2.48, -4.279],
+            "yaw": 88.792,
+            "scale": 1.031
+        },
+        {
+            "type": "diode",
+            "pos": [1.855, 2.48, -3.643],
+            "yaw": 0.365,
+            "scale": 1.133
+        },
+        {
+            "type": "jumper",
+            "pos": [2.053, 2.48, 9.224],
+            "yaw": 87.041,
+            "scale": 1.103
+        },
+        {
+            "type": "resistor",
+            "pos": [1.923, 2.48, 11.184],
+            "yaw": 88.493,
+            "scale": 0.944
+        },
+        {
+            "type": "diode",
+            "pos": [2.844, 2.48, -5.007],
+            "yaw": 1.302,
+            "scale": 1.145
+        },
+        {
+            "type": "resistor",
+            "pos": [2.475, 2.48, 3.164],
+            "yaw": 1.281,
+            "scale": 1.122
+        },
+        {
+            "type": "cap_ceramic",
+            "pos": [2.674, 2.48, 5.705],
+            "yaw": 2.719,
+            "scale": 1.028
+        },
+        {
+            "type": "transistor",
+            "pos": [2.591, 2.48, 10.646],
+            "yaw": 91.215,
+            "scale": 1.144
+        },
+        {
+            "type": "resistor",
+            "pos": [2.866, 2.48, 13.021],
+            "yaw": 92.096,
+            "scale": 0.93
+        },
+        {
+            "type": "transistor",
+            "pos": [3.48, 2.48, -1.426],
+            "yaw": 88.86,
+            "scale": 1.044
+        },
+        {
+            "type": "resistor",
+            "pos": [4.004, 2.48, -2.245],
+            "yaw": 87.403,
+            "scale": 1.014
+        },
+        {
+            "type": "coil_choke",
+            "pos": [3.878, 2.48, -1.742],
+            "yaw": -1.903,
+            "scale": 1.037
+        },
+        {
+            "type": "coil_choke",
+            "pos": [4.083, 2.48, 4.147],
+            "yaw": 91.394,
+            "scale": 1.115
+        },
+        {
+            "type": "transistor",
+            "pos": [4.268, 2.48, 14.057],
+            "yaw": 88.25,
+            "scale": 1.002
+        },
+        {
+            "type": "transistor",
+            "pos": [4.756, 2.48, -10.367],
+            "yaw": 2.577,
+            "scale": 0.921
+        },
+        {
+            "type": "resistor",
+            "pos": [4.598, 2.48, -9.13],
+            "yaw": -2.55,
+            "scale": 0.967
+        },
+        {
+            "type": "transistor",
+            "pos": [4.962, 2.48, 3.864],
+            "yaw": 1.201,
+            "scale": 1.011
+        },
+        {
+            "type": "jumper",
+            "pos": [4.639, 2.48, 5.632],
+            "yaw": 90.313,
+            "scale": 1.048
+        },
+        {
+            "type": "diode",
+            "pos": [4.97, 2.48, 11.557],
+            "yaw": 151.282,
+            "scale": 1.078
+        },
+        {
+            "type": "resistor",
+            "pos": [5.703, 2.48, -16.354],
+            "yaw": -0.455,
+            "scale": 1.07
+        },
+        {
+            "type": "cap_ceramic",
+            "pos": [5.744, 2.48, -15.674],
+            "yaw": 41.105,
+            "scale": 0.92
+        },
+        {
+            "type": "cap_ceramic",
+            "pos": [5.55, 2.48, -6.355],
+            "yaw": 316.738,
+            "scale": 1.087
+        },
+        {
+            "type": "cap_ceramic",
+            "pos": [5.717, 2.48, -5.658],
+            "yaw": 88.524,
+            "scale": 0.916
+        },
+        {
+            "type": "resistor",
+            "pos": [5.573, 2.48, -4.173],
+            "yaw": 123.792,
+            "scale": 0.913
+        },
+        {
+            "type": "resistor",
+            "pos": [5.519, 2.48, 2.12],
+            "yaw": -1.675,
+            "scale": 1.013
+        },
+        {
+            "type": "cap_ceramic",
+            "pos": [5.349, 2.48, 9.775],
+            "yaw": 91.6,
+            "scale": 1.06
+        },
+        {
+            "type": "diode",
+            "pos": [5.63, 2.48, 10.452],
+            "yaw": -0.741,
+            "scale": 0.925
+        },
+        {
+            "type": "cap_ceramic",
+            "pos": [6.12, 2.48, -4.522],
+            "yaw": -1.071,
+            "scale": 0.995
+        },
+        {
+            "type": "jumper",
+            "pos": [6.31, 2.48, 9.924],
+            "yaw": 2.057,
+            "scale": 1.141
+        },
+        {
+            "type": "resistor",
+            "pos": [6.684, 2.48, -5.697],
+            "yaw": 1.093,
+            "scale": 1.102
+        },
+        {
+            "type": "coil_choke",
+            "pos": [6.71, 2.48, 4.151],
+            "yaw": 92.363,
+            "scale": 0.961
+        },
+        {
+            "type": "transistor",
+            "pos": [7.633, 2.48, -0.62],
+            "yaw": 90.052,
+            "scale": 1.043
+        },
+        {
+            "type": "cap_ceramic",
+            "pos": [7.377, 2.48, 9.465],
+            "yaw": 1.632,
+            "scale": 1.031
+        },
+        {
+            "type": "resistor",
+            "pos": [7.357, 2.48, 10.881],
+            "yaw": 91.887,
+            "scale": 0.973
+        },
+        {
+            "type": "resistor",
+            "pos": [8.298, 2.48, -15.406],
+            "yaw": 92.634,
+            "scale": 0.951
+        },
+        {
+            "type": "coil_choke",
+            "pos": [8.361, 2.48, -8.378],
+            "yaw": 91.754,
+            "scale": 0.903
+        },
+        {
+            "type": "resistor",
+            "pos": [8.173, 2.48, -1.564],
+            "yaw": 0.96,
+            "scale": 1.052
+        },
+        {
+            "type": "cap_ceramic",
+            "pos": [8.322, 2.48, 3.361],
+            "yaw": 92.601,
+            "scale": 1.012
+        },
+        {
+            "type": "resistor",
+            "pos": [8.067, 2.48, 9.816],
+            "yaw": 2.146,
+            "scale": 0.996
+        },
+        {
+            "type": "diode",
+            "pos": [8.301, 2.48, 11.994],
+            "yaw": 1.095,
+            "scale": 0.918
+        },
+        {
+            "type": "resistor",
+            "pos": [8.839, 2.48, -7.115],
+            "yaw": 348.042,
+            "scale": 0.938
+        },
+        {
+            "type": "coil_choke",
+            "pos": [9.022, 2.48, -5.14],
+            "yaw": 92.937,
+            "scale": 1.077
+        },
+        {
+            "type": "cap_ceramic",
+            "pos": [9.21, 2.48, -0.105],
+            "yaw": 91.341,
+            "scale": 0.901
+        },
+        {
+            "type": "resistor",
+            "pos": [8.989, 2.48, 3.171],
+            "yaw": -0.672,
+            "scale": 0.98
+        },
+        {
+            "type": "resistor",
+            "pos": [8.845, 2.48, 4.704],
+            "yaw": 0.052,
+            "scale": 1.106
+        },
+        {
+            "type": "jumper",
+            "pos": [8.908, 2.48, 8.916],
+            "yaw": 0.067,
+            "scale": 1.1
+        },
+        {
+            "type": "resistor",
+            "pos": [8.836, 2.48, 11],
+            "yaw": -2.193,
+            "scale": 1.106
+        },
+        {
+            "type": "resistor",
+            "pos": [9.525, 2.48, -18.414],
+            "yaw": 194.692,
+            "scale": 0.905
+        },
+        {
+            "type": "transistor",
+            "pos": [9.593, 2.48, -0.906],
+            "yaw": -1.869,
+            "scale": 1.081
+        },
+        {
+            "type": "resistor",
+            "pos": [9.709, 2.48, 0.554],
+            "yaw": 91.531,
+            "scale": 0.928
+        },
+        {
+            "type": "resistor",
+            "pos": [9.489, 2.48, 2.899],
+            "yaw": -1.509,
+            "scale": 0.958
+        },
+        {
+            "type": "cap_ceramic",
+            "pos": [10.433, 2.48, -0.613],
+            "yaw": -1.678,
+            "scale": 1.116
+        },
+        {
+            "type": "resistor",
+            "pos": [10.605, 2.48, 0.071],
+            "yaw": 1.872,
+            "scale": 0.986
+        },
+        {
+            "type": "diode",
+            "pos": [10.423, 2.48, 2.095],
+            "yaw": 2.172,
+            "scale": 1.1
+        },
+        {
+            "type": "diode",
+            "pos": [10.433, 2.48, 8.409],
+            "yaw": 88.544,
+            "scale": 0.986
+        },
+        {
+            "type": "cap_ceramic",
+            "pos": [10.925, 2.48, -17.116],
+            "yaw": 1.507,
+            "scale": 0.922
+        },
+        {
+            "type": "coil_choke",
+            "pos": [11.033, 2.48, -12.199],
+            "yaw": 92.531,
+            "scale": 0.921
+        },
+        {
+            "type": "resistor",
+            "pos": [11.017, 2.48, 6.901],
+            "yaw": 19.26,
+            "scale": 0.933
+        },
+        {
+            "type": "transistor",
+            "pos": [10.866, 2.48, 7.832],
+            "yaw": 2.325,
+            "scale": 1.005
+        },
+        {
+            "type": "resistor",
+            "pos": [11.017, 2.48, 13.037],
+            "yaw": 92.76,
+            "scale": 0.925
+        },
+        {
+            "type": "diode",
+            "pos": [11.639, 2.48, -15.035],
+            "yaw": 89.083,
+            "scale": 0.916
+        },
+        {
+            "type": "diode",
+            "pos": [11.772, 2.48, 9.658],
+            "yaw": -0.109,
+            "scale": 0.903
+        },
+        {
+            "type": "cap_ceramic",
+            "pos": [11.815, 2.48, 11.814],
+            "yaw": -1.607,
+            "scale": 0.993
+        },
+        {
+            "type": "resistor",
+            "pos": [12.353, 2.48, -15.581],
+            "yaw": 1.577,
+            "scale": 0.972
+        },
+        {
+            "type": "coil_choke",
+            "pos": [12.559, 2.48, -12.023],
+            "yaw": 91.526,
+            "scale": 1.048
+        },
+        {
+            "type": "transistor",
+            "pos": [12.594, 2.48, 11.223],
+            "yaw": 87.735,
+            "scale": 1.032
+        },
+        {
+            "type": "cap_ceramic",
+            "pos": [13.192, 2.48, -18.125],
+            "yaw": -0.813,
+            "scale": 1.052
+        },
+        {
+            "type": "resistor",
+            "pos": [12.986, 2.48, -9.25],
+            "yaw": 91.658,
+            "scale": 0.92
+        },
+        {
+            "type": "diode",
+            "pos": [12.996, 2.48, 1.792],
+            "yaw": 353.703,
+            "scale": 1.003
+        },
+        {
+            "type": "coil_choke",
+            "pos": [13.889, 2.48, -7.866],
+            "yaw": 92.505,
+            "scale": 0.982
+        },
+        {
+            "type": "resistor",
+            "pos": [14.021, 2.48, -0.129],
+            "yaw": 90.437,
+            "scale": 0.919
+        },
+        {
+            "type": "resistor",
+            "pos": [14.059, 2.48, 1.432],
+            "yaw": 343.122,
+            "scale": 0.952
+        },
+        {
+            "type": "cap_ceramic",
+            "pos": [14.069, 2.48, 2.239],
+            "yaw": -2.333,
+            "scale": 1.084
+        },
+        {
+            "type": "cap_ceramic",
+            "pos": [13.847, 2.48, 7.614],
+            "yaw": 0.661,
+            "scale": 1.039
+        },
+        {
+            "type": "resistor",
+            "pos": [13.898, 2.48, 10.448],
+            "yaw": 92.718,
+            "scale": 0.907
+        },
+        {
+            "type": "cap_ceramic",
+            "pos": [14.455, 2.48, -17.521],
+            "yaw": 1.897,
+            "scale": 0.953
+        },
+        {
+            "type": "resistor",
+            "pos": [14.751, 2.48, -9.296],
+            "yaw": 89.265,
+            "scale": 1.138
+        },
+        {
+            "type": "coil_choke",
+            "pos": [14.479, 2.48, 1.173],
+            "yaw": -2.517,
+            "scale": 0.935
+        },
+        {
+            "type": "transistor",
+            "pos": [15.263, 2.48, -17.728],
+            "yaw": 91.903,
+            "scale": 1.028
+        },
+        {
+            "type": "cap_ceramic",
+            "pos": [15.251, 2.48, -7.953],
+            "yaw": 0.235,
+            "scale": 1.007
+        },
+        {
+            "type": "jumper",
+            "pos": [15.22, 2.48, 2.81],
+            "yaw": 90.676,
+            "scale": 0.94
+        },
+        {
+            "type": "cap_ceramic",
+            "pos": [15.961, 2.48, -14.835],
+            "yaw": 91.968,
+            "scale": 1.14
+        },
+        {
+            "type": "cap_ceramic",
+            "pos": [15.806, 2.48, -7.956],
+            "yaw": 92.827,
+            "scale": 0.904
+        },
+        {
+            "type": "resistor",
+            "pos": [16.034, 2.48, 1.223],
+            "yaw": 92.865,
+            "scale": 0.903
+        },
+        {
+            "type": "transistor",
+            "pos": [15.897, 2.48, 10.371],
+            "yaw": 87.084,
+            "scale": 0.911
+        },
+        {
+            "type": "resistor",
+            "pos": [16.912, 2.48, -18.436],
+            "yaw": 1.858,
+            "scale": 1.081
+        },
+        {
+            "type": "resistor",
+            "pos": [16.538, 2.48, 2.211],
+            "yaw": 88.92,
+            "scale": 0.949
+        },
+        {
+            "type": "transistor",
+            "pos": [16.653, 2.48, 9.588],
+            "yaw": 0.042,
+            "scale": 1.023
+        },
+        {
+            "type": "diode",
+            "pos": [16.871, 2.48, 10.189],
+            "yaw": 92.363,
+            "scale": 0.945
+        },
+        {
+            "type": "cap_ceramic",
+            "pos": [17.616, 2.48, -0.689],
+            "yaw": 90.918,
+            "scale": 1.1
+        },
+        {
+            "type": "resistor",
+            "pos": [17.358, 2.48, 0.113],
+            "yaw": -2.579,
+            "scale": 1.056
+        },
+        {
+            "type": "resistor",
+            "pos": [17.35, 2.48, 0.412],
+            "yaw": 89.168,
+            "scale": 1.034
+        },
+        {
+            "type": "diode",
+            "pos": [17.302, 2.48, 10.401],
+            "yaw": -0.383,
+            "scale": 0.969
+        },
+        {
+            "type": "transistor",
+            "pos": [18.285, 2.48, -2.447],
+            "yaw": 90.683,
+            "scale": 0.961
+        },
+        {
+            "type": "transistor",
+            "pos": [18.13, 2.48, -1.279],
+            "yaw": -0.171,
+            "scale": 1.003
+        },
+        {
+            "type": "resistor",
+            "pos": [18.898, 2.48, -18.512],
+            "yaw": 88.424,
+            "scale": 0.934
+        },
+        {
+            "type": "jumper",
+            "pos": [18.811, 2.48, -2.329],
+            "yaw": -2.317,
+            "scale": 0.941
+        },
+        {
+            "type": "cap_ceramic",
+            "pos": [18.978, 2.48, -0.138],
+            "yaw": 0.948,
+            "scale": 0.967
+        },
+        {
+            "type": "resistor",
+            "pos": [18.805, 2.48, 0.762],
+            "yaw": 1.892,
+            "scale": 1.118
+        },
+        {
+            "type": "resistor",
+            "pos": [18.673, 2.48, 2.55],
+            "yaw": 2.309,
+            "scale": 1.053
+        },
+        {
+            "type": "transistor",
+            "pos": [18.582, 2.48, 10.169],
+            "yaw": 0.926,
+            "scale": 1.064
+        }
+    ],
+    "cables": [
+        {
+            "r": 0.16,
+            "points": [
+                [7.5, 5.7, -11.5],
+                [6.993, 5.633, -12.021],
+                [6.486, 5.631, -12.543],
+                [5.979, 5.694, -13.064],
+                [5.471, 5.823, -13.586],
+                [4.964, 6.017, -14.107],
+                [4.457, 6.276, -14.629],
+                [3.95, 6.601, -15.15],
+                [3.443, 6.991, -15.671],
+                [2.936, 7.446, -16.193],
+                [2.429, 7.966, -16.714],
+                [1.921, 8.552, -17.236],
+                [1.414, 9.203, -17.757],
+                [0.907, 9.92, -18.279],
+                [0.4, 10.702, -18.8]
+            ]
+        }
+    ],
+    "dj": {
+        "pos": [0, 2.48, 0],
+        "yaw": 0,
+        "outfit": "wasteland",
+        "stage": "round",
+        "spin": 0.6
+    },
+    "solids": [
+        {
+            "kind": "box",
+            "c": [-12.5, 3.28, -4.8],
+            "ax": [
+                [-1, 0, 0],
+                [0, 1, 0],
+                [0, 0, -1]
+            ],
+            "half": [3.2, 0.8, 1.6],
+            "prop": 0
+        },
+        {
+            "kind": "box",
+            "c": [12.5, 3.28, -4.8],
+            "ax": [
+                [-1, 0, 0],
+                [0, 1, 0],
+                [0, 0, -1]
+            ],
+            "half": [3.2, 0.8, 1.6],
+            "prop": 1
+        },
+        {
+            "kind": "box",
+            "c": [12.5, 3.28, 4.8],
+            "ax": [
+                [1, 0, 0],
+                [0, 1, 0],
+                [0, 0, 1]
+            ],
+            "half": [3.2, 0.8, 1.6],
+            "prop": 2
+        },
+        {
+            "kind": "box",
+            "c": [-12.5, 3.28, 4.8],
+            "ax": [
+                [1, 0, 0],
+                [0, 1, 0],
+                [0, 0, 1]
+            ],
+            "half": [3.2, 0.8, 1.6],
+            "prop": 3
+        },
+        {
+            "kind": "box",
+            "c": [-19.3, 2.64, -4.8],
+            "ax": [
+                [0, 0, -1],
+                [0, 1, 0],
+                [1, 0, 0]
+            ],
+            "half": [1, 0.16, 0.4],
+            "prop": 4
+        },
+        {
+            "kind": "box",
+            "c": [-18.5, 2.8, -4.8],
+            "ax": [
+                [0, 0, -1],
+                [0, 1, 0],
+                [1, 0, 0]
+            ],
+            "half": [1, 0.32, 0.4],
+            "prop": 4
+        },
+        {
+            "kind": "box",
+            "c": [-17.7, 2.96, -4.8],
+            "ax": [
+                [0, 0, -1],
+                [0, 1, 0],
+                [1, 0, 0]
+            ],
+            "half": [1, 0.48, 0.4],
+            "prop": 4
+        },
+        {
+            "kind": "box",
+            "c": [-16.9, 3.12, -4.8],
+            "ax": [
+                [0, 0, -1],
+                [0, 1, 0],
+                [1, 0, 0]
+            ],
+            "half": [1, 0.64, 0.4],
+            "prop": 4
+        },
+        {
+            "kind": "box",
+            "c": [-16.1, 3.28, -4.8],
+            "ax": [
+                [0, 0, -1],
+                [0, 1, 0],
+                [1, 0, 0]
+            ],
+            "half": [1, 0.8, 0.4],
+            "prop": 4
+        },
+        {
+            "kind": "box",
+            "c": [19.3, 2.64, -4.8],
+            "ax": [
+                [0, 0, 1],
+                [0, 1, 0],
+                [-1, 0, 0]
+            ],
+            "half": [1, 0.16, 0.4],
+            "prop": 5
+        },
+        {
+            "kind": "box",
+            "c": [18.5, 2.8, -4.8],
+            "ax": [
+                [0, 0, 1],
+                [0, 1, 0],
+                [-1, 0, 0]
+            ],
+            "half": [1, 0.32, 0.4],
+            "prop": 5
+        },
+        {
+            "kind": "box",
+            "c": [17.7, 2.96, -4.8],
+            "ax": [
+                [0, 0, 1],
+                [0, 1, 0],
+                [-1, 0, 0]
+            ],
+            "half": [1, 0.48, 0.4],
+            "prop": 5
+        },
+        {
+            "kind": "box",
+            "c": [16.9, 3.12, -4.8],
+            "ax": [
+                [0, 0, 1],
+                [0, 1, 0],
+                [-1, 0, 0]
+            ],
+            "half": [1, 0.64, 0.4],
+            "prop": 5
+        },
+        {
+            "kind": "box",
+            "c": [16.1, 3.28, -4.8],
+            "ax": [
+                [0, 0, 1],
+                [0, 1, 0],
+                [-1, 0, 0]
+            ],
+            "half": [1, 0.8, 0.4],
+            "prop": 5
+        },
+        {
+            "kind": "box",
+            "c": [19.3, 2.64, 4.8],
+            "ax": [
+                [0, 0, 1],
+                [0, 1, 0],
+                [-1, 0, 0]
+            ],
+            "half": [1, 0.16, 0.4],
+            "prop": 6
+        },
+        {
+            "kind": "box",
+            "c": [18.5, 2.8, 4.8],
+            "ax": [
+                [0, 0, 1],
+                [0, 1, 0],
+                [-1, 0, 0]
+            ],
+            "half": [1, 0.32, 0.4],
+            "prop": 6
+        },
+        {
+            "kind": "box",
+            "c": [17.7, 2.96, 4.8],
+            "ax": [
+                [0, 0, 1],
+                [0, 1, 0],
+                [-1, 0, 0]
+            ],
+            "half": [1, 0.48, 0.4],
+            "prop": 6
+        },
+        {
+            "kind": "box",
+            "c": [16.9, 3.12, 4.8],
+            "ax": [
+                [0, 0, 1],
+                [0, 1, 0],
+                [-1, 0, 0]
+            ],
+            "half": [1, 0.64, 0.4],
+            "prop": 6
+        },
+        {
+            "kind": "box",
+            "c": [16.1, 3.28, 4.8],
+            "ax": [
+                [0, 0, 1],
+                [0, 1, 0],
+                [-1, 0, 0]
+            ],
+            "half": [1, 0.8, 0.4],
+            "prop": 6
+        },
+        {
+            "kind": "box",
+            "c": [-19.3, 2.64, 4.8],
+            "ax": [
+                [0, 0, -1],
+                [0, 1, 0],
+                [1, 0, 0]
+            ],
+            "half": [1, 0.16, 0.4],
+            "prop": 7
+        },
+        {
+            "kind": "box",
+            "c": [-18.5, 2.8, 4.8],
+            "ax": [
+                [0, 0, -1],
+                [0, 1, 0],
+                [1, 0, 0]
+            ],
+            "half": [1, 0.32, 0.4],
+            "prop": 7
+        },
+        {
+            "kind": "box",
+            "c": [-17.7, 2.96, 4.8],
+            "ax": [
+                [0, 0, -1],
+                [0, 1, 0],
+                [1, 0, 0]
+            ],
+            "half": [1, 0.48, 0.4],
+            "prop": 7
+        },
+        {
+            "kind": "box",
+            "c": [-16.9, 3.12, 4.8],
+            "ax": [
+                [0, 0, -1],
+                [0, 1, 0],
+                [1, 0, 0]
+            ],
+            "half": [1, 0.64, 0.4],
+            "prop": 7
+        },
+        {
+            "kind": "box",
+            "c": [-16.1, 3.28, 4.8],
+            "ax": [
+                [0, 0, -1],
+                [0, 1, 0],
+                [1, 0, 0]
+            ],
+            "half": [1, 0.8, 0.4],
+            "prop": 7
+        },
+        {
+            "kind": "box",
+            "c": [-6, 2.78, -3],
+            "ax": [
+                [-1, 0, 0],
+                [0, 1, 0],
+                [0, 0, -1]
+            ],
+            "half": [1.6, 0.3, 0.3],
+            "prop": 8
+        },
+        {
+            "kind": "box",
+            "c": [6, 2.78, -3],
+            "ax": [
+                [-1, 0, 0],
+                [0, 1, 0],
+                [0, 0, -1]
+            ],
+            "half": [1.6, 0.3, 0.3],
+            "prop": 9
+        },
+        {
+            "kind": "box",
+            "c": [6, 2.78, 3],
+            "ax": [
+                [1, 0, 0],
+                [0, 1, 0],
+                [0, 0, 1]
+            ],
+            "half": [1.6, 0.3, 0.3],
+            "prop": 10
+        },
+        {
+            "kind": "box",
+            "c": [-6, 2.78, 3],
+            "ax": [
+                [1, 0, 0],
+                [0, 1, 0],
+                [0, 0, 1]
+            ],
+            "half": [1.6, 0.3, 0.3],
+            "prop": 11
+        },
+        {
+            "kind": "box",
+            "c": [-3.4, 2.78, -6.5],
+            "ax": [
+                [0, 0, 1],
+                [0, 1, 0],
+                [-1, 0, 0]
+            ],
+            "half": [0.8, 0.3, 0.3],
+            "prop": 12
+        },
+        {
+            "kind": "box",
+            "c": [3.4, 2.78, -6.5],
+            "ax": [
+                [0, 0, -1],
+                [0, 1, 0],
+                [1, 0, 0]
+            ],
+            "half": [0.8, 0.3, 0.3],
+            "prop": 13
+        },
+        {
+            "kind": "box",
+            "c": [3.4, 2.78, 6.5],
+            "ax": [
+                [0, 0, -1],
+                [0, 1, 0],
+                [1, 0, 0]
+            ],
+            "half": [0.8, 0.3, 0.3],
+            "prop": 14
+        },
+        {
+            "kind": "box",
+            "c": [-3.4, 2.78, 6.5],
+            "ax": [
+                [0, 0, 1],
+                [0, 1, 0],
+                [-1, 0, 0]
+            ],
+            "half": [0.8, 0.3, 0.3],
+            "prop": 15
+        },
+        {
+            "kind": "cyl",
+            "a": [-17.8, 2.48, -8],
+            "b": [-17.8, 5.68, -8],
+            "r": 1.2,
+            "prop": 16
+        },
+        {
+            "kind": "cyl",
+            "a": [17.8, 2.48, -8],
+            "b": [17.8, 5.68, -8],
+            "r": 1.2,
+            "prop": 17
+        },
+        {
+            "kind": "cyl",
+            "a": [17.8, 2.48, 8],
+            "b": [17.8, 5.68, 8],
+            "r": 1.2,
+            "prop": 18
+        },
+        {
+            "kind": "cyl",
+            "a": [-17.8, 2.48, 8],
+            "b": [-17.8, 5.68, 8],
+            "r": 1.2,
+            "prop": 19
+        },
+        {
+            "kind": "cyl",
+            "a": [-13, 2.48, -13.5],
+            "b": [-13, 5.68, -13.5],
+            "r": 1.2,
+            "prop": 20
+        },
+        {
+            "kind": "cyl",
+            "a": [13, 2.48, -13.5],
+            "b": [13, 5.68, -13.5],
+            "r": 1.2,
+            "prop": 21
+        },
+        {
+            "kind": "cyl",
+            "a": [13, 2.48, 13.5],
+            "b": [13, 5.68, 13.5],
+            "r": 1.2,
+            "prop": 22
+        },
+        {
+            "kind": "cyl",
+            "a": [-13, 2.48, 13.5],
+            "b": [-13, 5.68, 13.5],
+            "r": 1.2,
+            "prop": 23
+        },
+        {
+            "kind": "box",
+            "c": [-17.4, 4.48, -12.8],
+            "ax": [
+                [-1, 0, 0],
+                [0, 1, 0],
+                [0, 0, -1]
+            ],
+            "half": [2, 2, 1.5],
+            "prop": 24
+        },
+        {
+            "kind": "box",
+            "c": [17.4, 4.48, -12.8],
+            "ax": [
+                [-1, 0, 0],
+                [0, 1, 0],
+                [0, 0, -1]
+            ],
+            "half": [2, 2, 1.5],
+            "prop": 25
+        },
+        {
+            "kind": "box",
+            "c": [17.4, 4.48, 12.8],
+            "ax": [
+                [1, 0, 0],
+                [0, 1, 0],
+                [0, 0, 1]
+            ],
+            "half": [2, 2, 1.5],
+            "prop": 26
+        },
+        {
+            "kind": "box",
+            "c": [-17.4, 4.48, 12.8],
+            "ax": [
+                [1, 0, 0],
+                [0, 1, 0],
+                [0, 0, 1]
+            ],
+            "half": [2, 2, 1.5],
+            "prop": 27
+        },
+        {
+            "kind": "box",
+            "c": [7.5, 4.08, -11.5],
+            "ax": [
+                [1, 0, 0],
+                [0, 1, 0],
+                [0, 0, 1]
+            ],
+            "half": [2.4, 1.6, 2.4],
+            "prop": 28
+        },
+        {
+            "kind": "box",
+            "c": [-7.5, 4.08, -11.5],
+            "ax": [
+                [1, 0, 0],
+                [0, 1, 0],
+                [0, 0, 1]
+            ],
+            "half": [2.4, 1.6, 2.4],
+            "prop": 29
+        },
+        {
+            "kind": "cap",
+            "a": [0, 2.68, -13],
+            "b": [0, 2.68, -5],
+            "r": 1.2,
+            "prop": 30
+        },
+        {
+            "kind": "cyl",
+            "a": [0, 1.98, 0],
+            "b": [0, 3.33, 0],
+            "r": 3.05,
+            "prop": -1
+        },
+        {
+            "kind": "box",
+            "c": [0, 2.78, -3.58],
+            "ax": [
+                [1, 0, 0],
+                [0, 1, 0],
+                [0, 0, 1]
+            ],
+            "half": [0.67, 0.3, 0.32],
+            "prop": -1
+        }
+    ]
+}

@@ -1,0 +1,2793 @@
+{
+ "seed": 7,
+ "rules": {
+  "teams": 3,
+  "wormsPerTeam": 5,
+  "health": 100,
+  "turnSeconds": 30,
+  "retreatSeconds": 3,
+  "windMax": 1,
+  "fallSafeHeight": 4,
+  "fallDamagePerMetre": 5,
+  "shotsPerTurn": 1
+ },
+ "arena": {
+  "waterLevel": 0.4,
+  "min": {
+   "x": -34.875,
+   "y": -19.6,
+   "z": -28.375
+  },
+  "max": {
+   "x": 38.625,
+   "y": 53.375,
+   "z": 27.125
+  }
+ },
+ "characters": [
+  "opus",
+  "astra",
+  "glm",
+  "grok",
+  "gemini",
+  "kimi",
+  "deepseek",
+  "qwen",
+  "minimax",
+  "nova",
+  "llama",
+  "cohere",
+  "phi",
+  "mistral",
+  "nemotron"
+ ],
+ "spawns": [
+  [
+   9.125,
+   1.538,
+   9.625
+  ],
+  [
+   -1.375,
+   2.431,
+   -7.375
+  ],
+  [
+   6.625,
+   7.52,
+   0.125
+  ],
+  [
+   -19.875,
+   2.859,
+   -4.875
+  ],
+  [
+   -17.875,
+   1.687,
+   -8.875
+  ],
+  [
+   3.125,
+   2.252,
+   -6.375
+  ],
+  [
+   -16.375,
+   3.978,
+   -2.875
+  ],
+  [
+   -5.375,
+   2.074,
+   -10.375
+  ],
+  [
+   12.625,
+   3.103,
+   7.625
+  ],
+  [
+   20.125,
+   1.431,
+   12.625
+  ],
+  [
+   -9.375,
+   2.52,
+   -11.875
+  ],
+  [
+   18.125,
+   7.228,
+   6.625
+  ],
+  [
+   -13.875,
+   2.217,
+   -9.375
+  ],
+  [
+   -3.875,
+   10.895,
+   -1.375
+  ],
+  [
+   9.125,
+   3.002,
+   -3.875
+  ]
+ ],
+ "winner": 0,
+ "hash": "47c2e675c955ffdf",
+ "turns": [
+  {
+   "turn": 1,
+   "worm": 0,
+   "character": "opus",
+   "start": 0,
+   "end": 462,
+   "action": "shoot",
+   "damage": {
+    "astra": 39
+   },
+   "deaths": [
+    {
+     "character": "astra",
+     "cause": "water"
+    }
+   ],
+   "events": [
+    "death astra water"
+   ],
+   "weapon": "rocket",
+   "aimAt": 81,
+   "fireAt": 125,
+   "impact": {
+    "tick": 220,
+    "at": {
+     "x": -9.331353395369284,
+     "y": 2.8185845572355834,
+     "z": -11.68006035464142
+    },
+    "kind": "explode"
+   }
+  },
+  {
+   "turn": 2,
+   "worm": 4,
+   "character": "gemini",
+   "start": 462,
+   "end": 1009,
+   "action": "shoot",
+   "damage": {
+    "phi": 39
+   },
+   "deaths": [],
+   "events": [],
+   "weapon": "grenade",
+   "aimAt": 543,
+   "fireAt": 587,
+   "impact": {
+    "tick": 767,
+    "at": {
+     "x": -13.859142793770273,
+     "y": 2.2097305482477507,
+     "z": -9.32794241713637
+    },
+    "kind": "explode"
+   }
+  },
+  {
+   "turn": 3,
+   "worm": 2,
+   "character": "glm",
+   "start": 1009,
+   "end": 1501,
+   "action": "shoot",
+   "damage": {
+    "llama": 41
+   },
+   "deaths": [],
+   "events": [],
+   "weapon": "rocket",
+   "aimAt": 1090,
+   "fireAt": 1134,
+   "impact": {
+    "tick": 1259,
+    "at": {
+     "x": 3.1424004366473075,
+     "y": 2.63965432936113,
+     "z": -6.36697269823198
+    },
+    "kind": "explode"
+   }
+  },
+  {
+   "turn": 4,
+   "worm": 3,
+   "character": "grok",
+   "start": 1501,
+   "end": 2048,
+   "action": "shoot",
+   "damage": {
+    "gemini": 43
+   },
+   "deaths": [],
+   "events": [],
+   "weapon": "grenade",
+   "aimAt": 1582,
+   "fireAt": 1626,
+   "impact": {
+    "tick": 1806,
+    "at": {
+     "x": -5.425777702872995,
+     "y": 2.3904635661841462,
+     "z": -10.433738017919028
+    },
+    "kind": "explode"
+   }
+  },
+  {
+   "turn": 5,
+   "worm": 7,
+   "character": "qwen",
+   "start": 2048,
+   "end": 2595,
+   "action": "shoot",
+   "damage": {
+    "phi": 29
+   },
+   "deaths": [
+    {
+     "character": "phi",
+     "cause": "health"
+    }
+   ],
+   "events": [
+    "death phi health"
+   ],
+   "weapon": "grenade",
+   "aimAt": 2129,
+   "fireAt": 2173,
+   "impact": {
+    "tick": 2353,
+    "at": {
+     "x": -14.103491486548243,
+     "y": 1.6275478292783387,
+     "z": -9.804754760859327
+    },
+    "kind": "explode"
+   }
+  },
+  {
+   "turn": 6,
+   "worm": 5,
+   "character": "kimi",
+   "start": 2595,
+   "end": 3142,
+   "action": "shoot",
+   "damage": {
+    "mistral": 40
+   },
+   "deaths": [],
+   "events": [],
+   "weapon": "grenade",
+   "aimAt": 2676,
+   "fireAt": 2720,
+   "impact": {
+    "tick": 2900,
+    "at": {
+     "x": 9.160780262229828,
+     "y": 3.1303593562657928,
+     "z": -3.6950057065716475
+    },
+    "kind": "explode"
+   }
+  },
+  {
+   "turn": 7,
+   "worm": 6,
+   "character": "deepseek",
+   "start": 3142,
+   "end": 3640,
+   "action": "shoot",
+   "damage": {
+    "qwen": 41
+   },
+   "deaths": [],
+   "events": [],
+   "weapon": "rocket",
+   "aimAt": 3223,
+   "fireAt": 3267,
+   "impact": {
+    "tick": 3398,
+    "at": {
+     "x": -1.4373816570246822,
+     "y": 2.787795322129991,
+     "z": -7.449161067701197
+    },
+    "kind": "explode"
+   }
+  },
+  {
+   "turn": 8,
+   "worm": 10,
+   "character": "llama",
+   "start": 3640,
+   "end": 4122,
+   "action": "shoot",
+   "damage": {
+    "glm": 35
+   },
+   "deaths": [],
+   "events": [],
+   "weapon": "rocket",
+   "aimAt": 3721,
+   "fireAt": 3765,
+   "impact": {
+    "tick": 3880,
+    "at": {
+     "x": 6.602691221018205,
+     "y": 7.452354984478367,
+     "z": 0.0017461107865296421
+    },
+    "kind": "explode"
+   }
+  },
+  {
+   "turn": 9,
+   "worm": 8,
+   "character": "minimax",
+   "start": 4122,
+   "end": 4638,
+   "action": "shoot",
+   "damage": {
+    "llama": 39
+   },
+   "deaths": [],
+   "events": [],
+   "weapon": "rocket",
+   "aimAt": 4203,
+   "fireAt": 4247,
+   "impact": {
+    "tick": 4396,
+    "at": {
+     "x": 2.8307364978459986,
+     "y": 2.361517833386882,
+     "z": -6.80633981501846
+    },
+    "kind": "explode"
+   }
+  },
+  {
+   "turn": 10,
+   "worm": 9,
+   "character": "nova",
+   "start": 4638,
+   "end": 5558,
+   "action": "shoot",
+   "damage": {
+    "gemini": 42
+   },
+   "deaths": [
+    {
+     "character": "gemini",
+     "cause": "health"
+    }
+   ],
+   "events": [
+    "hermes {\"kind\":\"hermes\",\"pos\":{\"x\":19.875,\"y\":7.250151486180146,\"z\":7.125},\"landTick\":5070,\"seq\":46,\"tick\":4638}",
+    "capsule {\"kind\":\"capsule\",\"pos\":{\"x\":19.875,\"y\":7.250151486180146,\"z\":7.125},\"state\":\"landed\",\"seq\":47,\"tick\":5070}",
+    "death gemini health"
+   ],
+   "weapon": "grenade",
+   "aimAt": 5092,
+   "fireAt": 5136,
+   "impact": {
+    "tick": 5316,
+    "at": {
+     "x": -4.493683672024142,
+     "y": 2.430288053191354,
+     "z": -9.499281186972622
+    },
+    "kind": "explode"
+   }
+  },
+  {
+   "turn": 11,
+   "worm": 13,
+   "character": "mistral",
+   "start": 5558,
+   "end": 6066,
+   "action": "shoot",
+   "damage": {
+    "glm": 39
+   },
+   "deaths": [],
+   "events": [],
+   "weapon": "rocket",
+   "aimAt": 5639,
+   "fireAt": 5683,
+   "impact": {
+    "tick": 5824,
+    "at": {
+     "x": 6.799947966722175,
+     "y": 7.433724168407648,
+     "z": 0.8955989423160247
+    },
+    "kind": "explode"
+   }
+  },
+  {
+   "turn": 12,
+   "worm": 11,
+   "character": "cohere",
+   "start": 6066,
+   "end": 6542,
+   "action": "shoot",
+   "damage": {
+    "mistral": 32
+   },
+   "deaths": [
+    {
+     "character": "mistral",
+     "cause": "water"
+    }
+   ],
+   "events": [
+    "death mistral water"
+   ],
+   "weapon": "rocket",
+   "aimAt": 6147,
+   "fireAt": 6191,
+   "impact": {
+    "tick": 6300,
+    "at": {
+     "x": 8.589120933175808,
+     "y": 2.180212491331571,
+     "z": -5.519930340562994
+    },
+    "kind": "explode"
+   }
+  },
+  {
+   "turn": 13,
+   "worm": 0,
+   "character": "opus",
+   "start": 6542,
+   "end": 7051,
+   "action": "shoot",
+   "damage": {
+    "glm": 32
+   },
+   "deaths": [
+    {
+     "character": "glm",
+     "cause": "health"
+    }
+   ],
+   "events": [
+    "death glm health"
+   ],
+   "weapon": "rocket",
+   "aimAt": 6623,
+   "fireAt": 6667,
+   "impact": {
+    "tick": 6809,
+    "at": {
+     "x": 5.864906075301479,
+     "y": 7.475787857425225,
+     "z": -0.6760855152236056
+    },
+    "kind": "explode"
+   }
+  },
+  {
+   "turn": 14,
+   "worm": 7,
+   "character": "qwen",
+   "start": 7051,
+   "end": 7558,
+   "action": "shoot",
+   "damage": {
+    "nova": 41
+   },
+   "deaths": [],
+   "events": [],
+   "weapon": "rocket",
+   "aimAt": 7132,
+   "fireAt": 7176,
+   "impact": {
+    "tick": 7316,
+    "at": {
+     "x": -17.752450897250572,
+     "y": 1.9825715902306138,
+     "z": -8.977949455467833
+    },
+    "kind": "explode"
+   }
+  },
+  {
+   "turn": 15,
+   "worm": 14,
+   "character": "nemotron",
+   "start": 7558,
+   "end": 8076,
+   "action": "shoot",
+   "damage": {
+    "llama": 14
+   },
+   "deaths": [],
+   "events": [],
+   "weapon": "rocket",
+   "aimAt": 7639,
+   "fireAt": 7683,
+   "impact": {
+    "tick": 7834,
+    "at": {
+     "x": 1.2958870179643514,
+     "y": 2.759469481664874,
+     "z": -6.024630602570176
+    },
+    "kind": "explode"
+   }
+  },
+  {
+   "turn": 16,
+   "worm": 3,
+   "character": "grok",
+   "start": 8076,
+   "end": 8623,
+   "action": "shoot",
+   "damage": {
+    "llama": 4
+   },
+   "deaths": [
+    {
+     "character": "llama",
+     "cause": "health"
+    }
+   ],
+   "events": [
+    "death llama health"
+   ],
+   "weapon": "grenade",
+   "aimAt": 8157,
+   "fireAt": 8201,
+   "impact": {
+    "tick": 8381,
+    "at": {
+     "x": 2.2366918626822,
+     "y": 2.8473113819172284,
+     "z": -6.023992115422799
+    },
+    "kind": "explode"
+   }
+  },
+  {
+   "turn": 17,
+   "worm": 7,
+   "character": "qwen",
+   "start": 8623,
+   "end": 9198,
+   "action": "shoot",
+   "damage": {
+    "opus": 39
+   },
+   "deaths": [],
+   "events": [],
+   "weapon": "rocket",
+   "aimAt": 8704,
+   "fireAt": 8748,
+   "impact": {
+    "tick": 8956,
+    "at": {
+     "x": -16.17299862515916,
+     "y": 4.213945454836586,
+     "z": -2.8070374880540845
+    },
+    "kind": "explode"
+   }
+  },
+  {
+   "turn": 18,
+   "worm": 5,
+   "character": "kimi",
+   "start": 9198,
+   "end": 9788,
+   "action": "capsule",
+   "damage": {
+    "grok": 21
+   },
+   "deaths": [],
+   "events": [
+    "bonus {\"kind\":\"bonus\",\"worm\":5,\"bonus\":\"wrong\",\"pos\":{\"x\":19.875,\"y\":7.250151486180146,\"z\":7.125},\"exploded\":false,\"seq\":87,\"t"
+   ],
+   "weapon": "rocket",
+   "aimAt": 9338,
+   "fireAt": 9382,
+   "impact": {
+    "tick": 9549,
+    "at": {
+     "x": -4.377243431532723,
+     "y": 10.779961086442292,
+     "z": -2.0811398696552983
+    },
+    "kind": "explode"
+   }
+  },
+  {
+   "turn": 19,
+   "worm": 6,
+   "character": "deepseek",
+   "start": 9788,
+   "end": 10638,
+   "action": "shoot",
+   "damage": {
+    "qwen": 30
+   },
+   "deaths": [],
+   "events": [
+    "hermes {\"kind\":\"hermes\",\"pos\":{\"x\":24.375,\"y\":1.45834762052988,\"z\":10.875},\"landTick\":10220,\"seq\":92,\"tick\":9788}",
+    "capsule {\"kind\":\"capsule\",\"pos\":{\"x\":24.375,\"y\":1.45834762052988,\"z\":10.875},\"state\":\"landed\",\"seq\":93,\"tick\":10220}"
+   ],
+   "weapon": "rocket",
+   "aimAt": 10242,
+   "fireAt": 10286,
+   "impact": {
+    "tick": 10396,
+    "at": {
+     "x": -0.5764955091865869,
+     "y": 2.3887110772580926,
+     "z": -6.237113603253107
+    },
+    "kind": "explode"
+   }
+  },
+  {
+   "turn": 20,
+   "worm": 7,
+   "character": "qwen",
+   "start": 10638,
+   "end": 11187,
+   "action": "shoot",
+   "damage": {
+    "nemotron": 40
+   },
+   "deaths": [],
+   "events": [],
+   "weapon": "rocket",
+   "aimAt": 10719,
+   "fireAt": 10763,
+   "impact": {
+    "tick": 10945,
+    "at": {
+     "x": 9.194006581978202,
+     "y": 1.9288479108314338,
+     "z": 9.634104502115667
+    },
+    "kind": "explode"
+   }
+  },
+  {
+   "turn": 21,
+   "worm": 8,
+   "character": "minimax",
+   "start": 11187,
+   "end": 11549,
+   "action": "capsule",
+   "damage": {},
+   "deaths": [],
+   "events": [
+    "bonus {\"kind\":\"bonus\",\"worm\":8,\"bonus\":\"boots\",\"pos\":{\"x\":24.375,\"y\":1.45834762052988,\"z\":10.875},\"exploded\":false,\"seq\":102,\""
+   ]
+  },
+  {
+   "turn": 22,
+   "worm": 9,
+   "character": "nova",
+   "start": 11549,
+   "end": 12060,
+   "action": "shoot",
+   "damage": {
+    "qwen": 18
+   },
+   "deaths": [
+    {
+     "character": "qwen",
+     "cause": "health"
+    }
+   ],
+   "events": [
+    "death qwen health"
+   ],
+   "weapon": "rocket",
+   "aimAt": 11630,
+   "fireAt": 11674,
+   "impact": {
+    "tick": 11818,
+    "at": {
+     "x": -0.0649944704621079,
+     "y": 2.5259648420017604,
+     "z": -5.479272963691957
+    },
+    "kind": "explode"
+   }
+  },
+  {
+   "turn": 23,
+   "worm": 11,
+   "character": "cohere",
+   "start": 12060,
+   "end": 12561,
+   "action": "shoot",
+   "damage": {
+    "grok": 1
+   },
+   "deaths": [],
+   "events": [],
+   "weapon": "rocket",
+   "aimAt": 12141,
+   "fireAt": 12185,
+   "impact": {
+    "tick": 12319,
+    "at": {
+     "x": -5.074272475913558,
+     "y": 10.311839229714444,
+     "z": 0.08458037312666791
+    },
+    "kind": "explode"
+   }
+  },
+  {
+   "turn": 24,
+   "worm": 0,
+   "character": "opus",
+   "start": 12561,
+   "end": 13095,
+   "action": "shoot",
+   "damage": {
+    "nemotron": 22
+   },
+   "deaths": [],
+   "events": [],
+   "weapon": "rocket",
+   "aimAt": 12642,
+   "fireAt": 12686,
+   "impact": {
+    "tick": 12853,
+    "at": {
+     "x": 8.283420463848934,
+     "y": 1.7899041194125633,
+     "z": 9.793624466368975
+    },
+    "kind": "explode"
+   }
+  },
+  {
+   "turn": 25,
+   "worm": 14,
+   "character": "nemotron",
+   "start": 13095,
+   "end": 13611,
+   "action": "shoot",
+   "damage": {
+    "deepseek": 40
+   },
+   "deaths": [],
+   "events": [],
+   "weapon": "rocket",
+   "aimAt": 13176,
+   "fireAt": 13220,
+   "impact": {
+    "tick": 13369,
+    "at": {
+     "x": -19.852089157422437,
+     "y": 3.0504956404887644,
+     "z": -4.6706574350981
+    },
+    "kind": "explode"
+   }
+  },
+  {
+   "turn": 26,
+   "worm": 3,
+   "character": "grok",
+   "start": 13611,
+   "end": 14107,
+   "action": "shoot",
+   "damage": {
+    "nemotron": 28
+   },
+   "deaths": [
+    {
+     "character": "nemotron",
+     "cause": "water"
+    }
+   ],
+   "events": [
+    "death nemotron water"
+   ],
+   "weapon": "rocket",
+   "aimAt": 13692,
+   "fireAt": 13736,
+   "impact": {
+    "tick": 13865,
+    "at": {
+     "x": 7.495801033330185,
+     "y": 1.6741884858142073,
+     "z": 9.36257180721442
+    },
+    "kind": "explode"
+   }
+  },
+  {
+   "turn": 27,
+   "worm": 5,
+   "character": "kimi",
+   "start": 14107,
+   "end": 14615,
+   "action": "shoot",
+   "damage": {
+    "grok": 13
+   },
+   "deaths": [],
+   "events": [],
+   "weapon": "rocket",
+   "aimAt": 14188,
+   "fireAt": 14232,
+   "impact": {
+    "tick": 14373,
+    "at": {
+     "x": -4.1658171930399455,
+     "y": 10.34622449140942,
+     "z": -0.049140953159306736
+    },
+    "kind": "explode"
+   }
+  },
+  {
+   "turn": 28,
+   "worm": 6,
+   "character": "deepseek",
+   "start": 14615,
+   "end": 15393,
+   "action": "walk",
+   "damage": {
+    "cohere": 31
+   },
+   "deaths": [],
+   "events": [],
+   "weapon": "rocket",
+   "aimAt": 14931,
+   "fireAt": 14975,
+   "impact": {
+    "tick": 15151,
+    "at": {
+     "x": 12.682546371538212,
+     "y": 3.2389318284295516,
+     "z": 7.259188848557643
+    },
+    "kind": "explode"
+   }
+  },
+  {
+   "turn": 29,
+   "worm": 8,
+   "character": "minimax",
+   "start": 15393,
+   "end": 15767,
+   "action": "walk",
+   "damage": {},
+   "deaths": [],
+   "events": []
+  },
+  {
+   "turn": 30,
+   "worm": 9,
+   "character": "nova",
+   "start": 15767,
+   "end": 16139,
+   "action": "walk",
+   "damage": {},
+   "deaths": [],
+   "events": []
+  },
+  {
+   "turn": 31,
+   "worm": 11,
+   "character": "cohere",
+   "start": 16139,
+   "end": 17046,
+   "action": "shoot",
+   "damage": {
+    "grok": 40
+   },
+   "deaths": [],
+   "events": [
+    "hermes {\"kind\":\"hermes\",\"pos\":{\"x\":-3.375,\"y\":10.434737343761746,\"z\":-1.875},\"landTick\":16571,\"seq\":136,\"tick\":16139}",
+    "capsule {\"kind\":\"capsule\",\"pos\":{\"x\":-3.375,\"y\":10.434737343761746,\"z\":-1.875},\"state\":\"landed\",\"seq\":137,\"tick\":16571}"
+   ],
+   "weapon": "rocket",
+   "aimAt": 16593,
+   "fireAt": 16637,
+   "impact": {
+    "tick": 16804,
+    "at": {
+     "x": -4.484456357028718,
+     "y": 10.703067437516468,
+     "z": -0.7832873930592317
+    },
+    "kind": "explode"
+   }
+  },
+  {
+   "turn": 32,
+   "worm": 0,
+   "character": "opus",
+   "start": 17046,
+   "end": 17423,
+   "action": "walk",
+   "damage": {},
+   "deaths": [],
+   "events": []
+  },
+  {
+   "turn": 33,
+   "worm": 5,
+   "character": "kimi",
+   "start": 17423,
+   "end": 17960,
+   "action": "shoot",
+   "damage": {
+    "grok": 9
+   },
+   "deaths": [],
+   "events": [],
+   "weapon": "rocket",
+   "aimAt": 17504,
+   "fireAt": 17548,
+   "impact": {
+    "tick": 17718,
+    "at": {
+     "x": -5.173011862783516,
+     "y": 10.144759545551834,
+     "z": -0.7300048666106507
+    },
+    "kind": "explode"
+   }
+  },
+  {
+   "turn": 34,
+   "worm": 3,
+   "character": "grok",
+   "start": 17960,
+   "end": 18627,
+   "action": "capsule",
+   "damage": {
+    "cohere": 37
+   },
+   "deaths": [],
+   "events": [
+    "bonus {\"kind\":\"bonus\",\"worm\":3,\"bonus\":\"wrong\",\"pos\":{\"x\":-3.375,\"y\":10.434737343761746,\"z\":-1.875},\"exploded\":false,\"seq\":147"
+   ],
+   "weapon": "rocket",
+   "aimAt": 18165,
+   "fireAt": 18209,
+   "impact": {
+    "tick": 18385,
+    "at": {
+     "x": 11.809528311857443,
+     "y": 2.0798772039328792,
+     "z": 9.266898813619473
+    },
+    "kind": "explode"
+   }
+  },
+  {
+   "turn": 35,
+   "worm": 8,
+   "character": "minimax",
+   "start": 18627,
+   "end": 19001,
+   "action": "walk",
+   "damage": {},
+   "deaths": [],
+   "events": []
+  },
+  {
+   "turn": 36,
+   "worm": 6,
+   "character": "deepseek",
+   "start": 19001,
+   "end": 19549,
+   "action": "shoot",
+   "damage": {
+    "cohere": 13
+   },
+   "deaths": [
+    {
+     "character": "cohere",
+     "cause": "health"
+    }
+   ],
+   "events": [
+    "death cohere health"
+   ],
+   "weapon": "rocket",
+   "aimAt": 19082,
+   "fireAt": 19126,
+   "impact": {
+    "tick": 19307,
+    "at": {
+     "x": 12.61678655979066,
+     "y": 1.8480628658544997,
+     "z": 10.58312205472897
+    },
+    "kind": "explode"
+   }
+  },
+  {
+   "turn": 37,
+   "worm": 5,
+   "character": "kimi",
+   "start": 19549,
+   "end": 20456,
+   "action": "shoot",
+   "damage": {
+    "grok": 5
+   },
+   "deaths": [
+    {
+     "character": "grok",
+     "cause": "health"
+    }
+   ],
+   "events": [
+    "hermes {\"kind\":\"hermes\",\"pos\":{\"x\":13.125,\"y\":1.3091532104124526,\"z\":10.875},\"landTick\":19981,\"seq\":158,\"tick\":19549}",
+    "capsule {\"kind\":\"capsule\",\"pos\":{\"x\":13.125,\"y\":1.3091532104124526,\"z\":10.875},\"state\":\"landed\",\"seq\":159,\"tick\":19981}",
+    "death grok health"
+   ],
+   "weapon": "rocket",
+   "aimAt": 20003,
+   "fireAt": 20047,
+   "impact": {
+    "tick": 20214,
+    "at": {
+     "x": -4.045484020203968,
+     "y": 10.708051110711684,
+     "z": -1.7491706541697967
+    },
+    "kind": "explode"
+   }
+  },
+  {
+   "turn": 38,
+   "worm": 9,
+   "character": "nova",
+   "start": 20456,
+   "end": 20830,
+   "action": "walk",
+   "damage": {},
+   "deaths": [],
+   "events": []
+  },
+  {
+   "turn": 39,
+   "worm": 8,
+   "character": "minimax",
+   "start": 20830,
+   "end": 21140,
+   "action": "capsule",
+   "damage": {},
+   "deaths": [],
+   "events": [
+    "bonus {\"kind\":\"bonus\",\"worm\":8,\"bonus\":\"unstable\",\"pos\":{\"x\":13.125,\"y\":1.3091532104124526,\"z\":10.875},\"exploded\":true,\"seq\":1"
+   ]
+  },
+  {
+   "turn": 40,
+   "worm": 0,
+   "character": "opus",
+   "start": 21140,
+   "end": 21826,
+   "action": "walk",
+   "damage": {
+    "minimax": 40
+   },
+   "deaths": [],
+   "events": [],
+   "weapon": "rocket",
+   "aimAt": 21410,
+   "fireAt": 21454,
+   "impact": {
+    "tick": 21584,
+    "at": {
+     "x": 13.041793164892253,
+     "y": 1.6076713502996898,
+     "z": 11.048867988544231
+    },
+    "kind": "explode"
+   }
+  },
+  {
+   "turn": 41,
+   "worm": 5,
+   "character": "kimi",
+   "start": 21826,
+   "end": 22374,
+   "action": "shoot",
+   "damage": {},
+   "deaths": [],
+   "events": [],
+   "weapon": "rocket",
+   "aimAt": 21907,
+   "fireAt": 21951,
+   "impact": {
+    "tick": 22132,
+    "at": {
+     "x": -12.533235279862122,
+     "y": 5.37121721123083,
+     "z": -4.701303775126625
+    },
+    "kind": "explode"
+   }
+  },
+  {
+   "turn": 42,
+   "worm": 6,
+   "character": "deepseek",
+   "start": 22374,
+   "end": 22781,
+   "action": "walk",
+   "damage": {},
+   "deaths": [],
+   "events": []
+  },
+  {
+   "turn": 43,
+   "worm": 8,
+   "character": "minimax",
+   "start": 22781,
+   "end": 23001,
+   "action": "walk",
+   "damage": {},
+   "deaths": [],
+   "events": []
+  },
+  {
+   "turn": 44,
+   "worm": 9,
+   "character": "nova",
+   "start": 23001,
+   "end": 23309,
+   "action": "walk",
+   "damage": {},
+   "deaths": [],
+   "events": []
+  },
+  {
+   "turn": 45,
+   "worm": 5,
+   "character": "kimi",
+   "start": 23309,
+   "end": 24267,
+   "action": "capsule",
+   "damage": {
+    "opus": 39
+   },
+   "deaths": [],
+   "events": [
+    "hermes {\"kind\":\"hermes\",\"pos\":{\"x\":18.375,\"y\":7.250103459493861,\"z\":6.375},\"landTick\":23741,\"seq\":180,\"tick\":23309}",
+    "capsule {\"kind\":\"capsule\",\"pos\":{\"x\":18.375,\"y\":7.250103459493861,\"z\":6.375},\"state\":\"landed\",\"seq\":181,\"tick\":23741}",
+    "bonus {\"kind\":\"bonus\",\"worm\":5,\"bonus\":\"boots\",\"pos\":{\"x\":18.375,\"y\":7.250103459493861,\"z\":6.375},\"exploded\":false,\"seq\":182,\""
+   ],
+   "weapon": "rocket",
+   "aimAt": 23818,
+   "fireAt": 23862,
+   "impact": {
+    "tick": 24028,
+    "at": {
+     "x": -13.858165330315055,
+     "y": 2.718721970135994,
+     "z": 3.7808649094951394
+    },
+    "kind": "explode"
+   }
+  },
+  {
+   "turn": 46,
+   "worm": 0,
+   "character": "opus",
+   "start": 24267,
+   "end": 24804,
+   "action": "shoot",
+   "damage": {
+    "minimax": 33
+   },
+   "deaths": [
+    {
+     "character": "minimax",
+     "cause": "health"
+    }
+   ],
+   "events": [
+    "death minimax health"
+   ],
+   "weapon": "rocket",
+   "aimAt": 24348,
+   "fireAt": 24392,
+   "impact": {
+    "tick": 24562,
+    "at": {
+     "x": 13.362550642387998,
+     "y": 2.5156318604696812,
+     "z": 9.19180949322966
+    },
+    "kind": "explode"
+   }
+  },
+  {
+   "turn": 47,
+   "worm": 5,
+   "character": "kimi",
+   "start": 24804,
+   "end": 25357,
+   "action": "shoot",
+   "damage": {
+    "opus": 7
+   },
+   "deaths": [
+    {
+     "character": "opus",
+     "cause": "health"
+    }
+   ],
+   "events": [
+    "death opus health"
+   ],
+   "weapon": "rocket",
+   "aimAt": 24885,
+   "fireAt": 24929,
+   "impact": {
+    "tick": 25115,
+    "at": {
+     "x": -16.394772713399284,
+     "y": 1.508570220652806,
+     "z": 4.052619239391358
+    },
+    "kind": "explode"
+   }
+  },
+  {
+   "turn": 48,
+   "worm": 6,
+   "character": "deepseek",
+   "start": 25357,
+   "end": 25926,
+   "action": "shoot",
+   "damage": {
+    "kimi": 28
+   },
+   "deaths": [],
+   "events": [],
+   "weapon": "rocket",
+   "aimAt": 25438,
+   "fireAt": 25482,
+   "impact": {
+    "tick": 25684,
+    "at": {
+     "x": 18.747240663396763,
+     "y": 7.371715505557656,
+     "z": 6.588640524826923
+    },
+    "kind": "explode"
+   }
+  },
+  {
+   "turn": 49,
+   "worm": 5,
+   "character": "kimi",
+   "start": 25926,
+   "end": 26721,
+   "action": "walk",
+   "damage": {
+    "deepseek": 8
+   },
+   "deaths": [],
+   "events": [],
+   "weapon": "rocket",
+   "aimAt": 26217,
+   "fireAt": 26261,
+   "impact": {
+    "tick": 26479,
+    "at": {
+     "x": -12.28242793083553,
+     "y": 4.785563482448213,
+     "z": -4.273642388466633
+    },
+    "kind": "explode"
+   }
+  },
+  {
+   "turn": 50,
+   "worm": 9,
+   "character": "nova",
+   "start": 26721,
+   "end": 27278,
+   "action": "shoot",
+   "damage": {},
+   "deaths": [],
+   "events": [],
+   "weapon": "rocket",
+   "aimAt": 26802,
+   "fireAt": 26846,
+   "impact": {
+    "tick": 27036,
+    "at": {
+     "x": 13.373207262400003,
+     "y": 7.400729150312808,
+     "z": 3.3657480123468915
+    },
+    "kind": "explode"
+   }
+  },
+  {
+   "turn": 51,
+   "worm": 5,
+   "character": "kimi",
+   "start": 27278,
+   "end": 27828,
+   "action": "shoot",
+   "damage": {
+    "nova": 17
+   },
+   "deaths": [],
+   "events": [],
+   "weapon": "rocket",
+   "aimAt": 27359,
+   "fireAt": 27403,
+   "impact": {
+    "tick": 27586,
+    "at": {
+     "x": -10.371664801053356,
+     "y": 4.514662513206462,
+     "z": -5.373260182725591
+    },
+    "kind": "explode"
+   }
+  },
+  {
+   "turn": 52,
+   "worm": 6,
+   "character": "deepseek",
+   "start": 27828,
+   "end": 28036,
+   "action": "walk",
+   "damage": {},
+   "deaths": [],
+   "events": []
+  },
+  {
+   "turn": 53,
+   "worm": 5,
+   "character": "kimi",
+   "start": 28036,
+   "end": 28624,
+   "action": "shoot",
+   "damage": {
+    "nova": 18
+   },
+   "deaths": [],
+   "events": [],
+   "weapon": "rocket",
+   "aimAt": 28117,
+   "fireAt": 28161,
+   "impact": {
+    "tick": 28382,
+    "at": {
+     "x": -10.04673423935619,
+     "y": 3.769902426990882,
+     "z": -5.466434662906625
+    },
+    "kind": "explode"
+   }
+  },
+  {
+   "turn": 54,
+   "worm": 9,
+   "character": "nova",
+   "start": 28624,
+   "end": 29181,
+   "action": "shoot",
+   "damage": {
+    "kimi": 9
+   },
+   "deaths": [],
+   "events": [],
+   "weapon": "rocket",
+   "aimAt": 28705,
+   "fireAt": 28749,
+   "impact": {
+    "tick": 28939,
+    "at": {
+     "x": 13.889856334027007,
+     "y": 6.954902813518463,
+     "z": 3.0967227201580334
+    },
+    "kind": "explode"
+   }
+  },
+  {
+   "turn": 55,
+   "worm": 5,
+   "character": "kimi",
+   "start": 29181,
+   "end": 30139,
+   "action": "shoot",
+   "damage": {
+    "nova": 2
+   },
+   "deaths": [],
+   "events": [
+    "hermes {\"kind\":\"hermes\",\"pos\":{\"x\":-10.875,\"y\":1.79169359531592,\"z\":-10.125},\"landTick\":29613,\"seq\":221,\"tick\":29181}",
+    "capsule {\"kind\":\"capsule\",\"pos\":{\"x\":-10.875,\"y\":1.79169359531592,\"z\":-10.125},\"state\":\"landed\",\"seq\":222,\"tick\":29613}"
+   ],
+   "weapon": "rocket",
+   "aimAt": 29635,
+   "fireAt": 29679,
+   "impact": {
+    "tick": 29897,
+    "at": {
+     "x": -9.825122750373085,
+     "y": 2.997129634062587,
+     "z": -5.7687316412981495
+    },
+    "kind": "explode"
+   }
+  },
+  {
+   "turn": 56,
+   "worm": 6,
+   "character": "deepseek",
+   "start": 30139,
+   "end": 30747,
+   "action": "walk",
+   "damage": {
+    "kimi": 6
+   },
+   "deaths": [],
+   "events": [],
+   "weapon": "rocket",
+   "aimAt": 30264,
+   "fireAt": 30308,
+   "impact": {
+    "tick": 30505,
+    "at": {
+     "x": 14.19331025344301,
+     "y": 6.467511894249811,
+     "z": 3.6002168585889294
+    },
+    "kind": "explode"
+   }
+  },
+  {
+   "turn": 57,
+   "worm": 5,
+   "character": "kimi",
+   "start": 30747,
+   "end": 30919,
+   "action": "skip",
+   "damage": {},
+   "deaths": [],
+   "events": []
+  },
+  {
+   "turn": 58,
+   "worm": 9,
+   "character": "nova",
+   "start": 30919,
+   "end": 31457,
+   "action": "shoot",
+   "damage": {
+    "kimi": 34
+   },
+   "deaths": [
+    {
+     "character": "kimi",
+     "cause": "health"
+    }
+   ],
+   "events": [
+    "death kimi health"
+   ],
+   "weapon": "rocket",
+   "aimAt": 31000,
+   "fireAt": 31044,
+   "impact": {
+    "tick": 31215,
+    "at": {
+     "x": 14.728292270449046,
+     "y": 5.992587936058211,
+     "z": 3.346407729004844
+    },
+    "kind": "explode"
+   }
+  }
+ ],
+ "inputs": [
+  {
+   "tick": 80,
+   "kind": "weapon",
+   "weapon": "rocket"
+  },
+  {
+   "tick": 81,
+   "kind": "aim",
+   "x": 0.5069455253682335,
+   "y": 0.6819983600624985,
+   "z": -0.5271474852270364,
+   "power": 0.5499999999999999
+  },
+  {
+   "tick": 125,
+   "kind": "fire",
+   "power": 0.5499999999999999
+  },
+  {
+   "tick": 542,
+   "kind": "weapon",
+   "weapon": "grenade"
+  },
+  {
+   "tick": 543,
+   "kind": "aim",
+   "x": -0.7220961818581113,
+   "y": 0.6293203910498374,
+   "z": 0.287285484413705,
+   "power": 0.6
+  },
+  {
+   "tick": 587,
+   "kind": "fire",
+   "power": 0.6
+  },
+  {
+   "tick": 1089,
+   "kind": "weapon",
+   "weapon": "rocket"
+  },
+  {
+   "tick": 1090,
+   "kind": "aim",
+   "x": -0.12351471502148446,
+   "y": 0.9455185755993167,
+   "z": -0.3012287143846027,
+   "power": 0.44999999999999996
+  },
+  {
+   "tick": 1134,
+   "kind": "fire",
+   "power": 0.44999999999999996
+  },
+  {
+   "tick": 1581,
+   "kind": "weapon",
+   "weapon": "grenade"
+  },
+  {
+   "tick": 1582,
+   "kind": "aim",
+   "x": -0.04254112149529262,
+   "y": 0.9659258262890683,
+   "z": -0.25529894455266244,
+   "power": 0.9000000000000002
+  },
+  {
+   "tick": 1626,
+   "kind": "fire",
+   "power": 0.9000000000000002
+  },
+  {
+   "tick": 2128,
+   "kind": "weapon",
+   "weapon": "grenade"
+  },
+  {
+   "tick": 2129,
+   "kind": "aim",
+   "x": -0.627524740940542,
+   "y": 0.7771459614569708,
+   "z": 0.047506358507320684,
+   "power": 0.8000000000000002
+  },
+  {
+   "tick": 2173,
+   "kind": "fire",
+   "power": 0.8000000000000002
+  },
+  {
+   "tick": 2675,
+   "kind": "weapon",
+   "weapon": "grenade"
+  },
+  {
+   "tick": 2676,
+   "kind": "aim",
+   "x": -0.2365441575895141,
+   "y": 0.9455185755993167,
+   "z": -0.2236995411414744,
+   "power": 1.0000000000000002
+  },
+  {
+   "tick": 2720,
+   "kind": "fire",
+   "power": 1.0000000000000002
+  },
+  {
+   "tick": 3222,
+   "kind": "weapon",
+   "weapon": "rocket"
+  },
+  {
+   "tick": 3223,
+   "kind": "aim",
+   "x": 0.6236574562777871,
+   "y": 0.7771459614569708,
+   "z": -0.08423497979011149,
+   "power": 0.7500000000000001
+  },
+  {
+   "tick": 3267,
+   "kind": "fire",
+   "power": 0.7500000000000001
+  },
+  {
+   "tick": 3720,
+   "kind": "weapon",
+   "weapon": "rocket"
+  },
+  {
+   "tick": 3721,
+   "kind": "aim",
+   "x": 0.2307486212595502,
+   "y": 0.9455185755993167,
+   "z": 0.22967302188863137,
+   "power": 0.7000000000000001
+  },
+  {
+   "tick": 3765,
+   "kind": "fire",
+   "power": 0.7000000000000001
+  },
+  {
+   "tick": 4202,
+   "kind": "weapon",
+   "weapon": "rocket"
+  },
+  {
+   "tick": 4203,
+   "kind": "aim",
+   "x": -0.25852275726579554,
+   "y": 0.8571673007021122,
+   "z": -0.4454550511361896,
+   "power": 0.8000000000000002
+  },
+  {
+   "tick": 4247,
+   "kind": "fire",
+   "power": 0.8000000000000002
+  },
+  {
+   "tick": 5091,
+   "kind": "weapon",
+   "weapon": "grenade"
+  },
+  {
+   "tick": 5092,
+   "kind": "aim",
+   "x": 0.3193774264144301,
+   "y": 0.9455185755993167,
+   "z": -0.0631876783363207,
+   "power": 1.0000000000000002
+  },
+  {
+   "tick": 5136,
+   "kind": "fire",
+   "power": 1.0000000000000002
+  },
+  {
+   "tick": 5638,
+   "kind": "weapon",
+   "weapon": "rocket"
+  },
+  {
+   "tick": 5639,
+   "kind": "aim",
+   "x": 0.018106123347287145,
+   "y": 0.9455185755993167,
+   "z": 0.3250642882476817,
+   "power": 0.8000000000000002
+  },
+  {
+   "tick": 5683,
+   "kind": "fire",
+   "power": 0.8000000000000002
+  },
+  {
+   "tick": 6146,
+   "kind": "weapon",
+   "weapon": "rocket"
+  },
+  {
+   "tick": 6147,
+   "kind": "aim",
+   "x": -0.15986920095029702,
+   "y": 0.8191520442889918,
+   "z": -0.5508464095595788,
+   "power": 0.5499999999999999
+  },
+  {
+   "tick": 6191,
+   "kind": "fire",
+   "power": 0.5499999999999999
+  },
+  {
+   "tick": 6622,
+   "kind": "weapon",
+   "weapon": "rocket"
+  },
+  {
+   "tick": 6623,
+   "kind": "aim",
+   "x": 0.45207999344053884,
+   "y": 0.8910065241883678,
+   "z": 0.04160592968034529,
+   "power": 0.8000000000000002
+  },
+  {
+   "tick": 6667,
+   "kind": "fire",
+   "power": 0.8000000000000002
+  },
+  {
+   "tick": 7131,
+   "kind": "weapon",
+   "weapon": "rocket"
+  },
+  {
+   "tick": 7132,
+   "kind": "aim",
+   "x": -0.561068150590335,
+   "y": 0.8191520442889918,
+   "z": -0.11913210621115858,
+   "power": 0.7500000000000001
+  },
+  {
+   "tick": 7176,
+   "kind": "fire",
+   "power": 0.7500000000000001
+  },
+  {
+   "tick": 7638,
+   "kind": "weapon",
+   "weapon": "rocket"
+  },
+  {
+   "tick": 7639,
+   "kind": "aim",
+   "x": -0.23236531877821656,
+   "y": 0.7771459614569708,
+   "z": -0.58485084698598,
+   "power": 0.9000000000000002
+  },
+  {
+   "tick": 7683,
+   "kind": "fire",
+   "power": 0.9000000000000002
+  },
+  {
+   "tick": 8156,
+   "kind": "weapon",
+   "weapon": "grenade"
+  },
+  {
+   "tick": 8157,
+   "kind": "aim",
+   "x": 0.3535194062407553,
+   "y": 0.8910065241883678,
+   "z": -0.28483574787050053,
+   "power": 0.65
+  },
+  {
+   "tick": 8201,
+   "kind": "fire",
+   "power": 0.65
+  },
+  {
+   "tick": 8703,
+   "kind": "weapon",
+   "weapon": "rocket"
+  },
+  {
+   "tick": 8704,
+   "kind": "aim",
+   "x": -0.25378794938314886,
+   "y": 0.9659258262890683,
+   "z": 0.05078360813960475,
+   "power": 1.0000000000000002
+  },
+  {
+   "tick": 8748,
+   "kind": "fire",
+   "power": 1.0000000000000002
+  },
+  {
+   "tick": 9278,
+   "kind": "path",
+   "points": [
+    {
+     "x": 19.125,
+     "z": 7.125
+    },
+    {
+     "x": 19.875,
+     "z": 7.125
+    }
+   ]
+  },
+  {
+   "tick": 9307,
+   "kind": "open"
+  },
+  {
+   "tick": 9337,
+   "kind": "weapon",
+   "weapon": "rocket"
+  },
+  {
+   "tick": 9338,
+   "kind": "aim",
+   "x": -0.5147003896996287,
+   "y": 0.8571673007021122,
+   "z": -0.01864745157133,
+   "power": 0.9500000000000003
+  },
+  {
+   "tick": 9382,
+   "kind": "fire",
+   "power": 0.9500000000000003
+  },
+  {
+   "tick": 10241,
+   "kind": "weapon",
+   "weapon": "rocket"
+  },
+  {
+   "tick": 10242,
+   "kind": "aim",
+   "x": 0.7367479994796324,
+   "y": 0.6293203910498374,
+   "z": -0.24730190187630835,
+   "power": 0.7500000000000001
+  },
+  {
+   "tick": 10286,
+   "kind": "fire",
+   "power": 0.7500000000000001
+  },
+  {
+   "tick": 10718,
+   "kind": "weapon",
+   "weapon": "rocket"
+  },
+  {
+   "tick": 10719,
+   "kind": "aim",
+   "x": 0.09766427559297096,
+   "y": 0.9455185755993167,
+   "z": 0.3105741658115486,
+   "power": 0.8500000000000002
+  },
+  {
+   "tick": 10763,
+   "kind": "fire",
+   "power": 0.8500000000000002
+  },
+  {
+   "tick": 11267,
+   "kind": "path",
+   "points": [
+    {
+     "x": 20.625,
+     "z": 12.375
+    },
+    {
+     "x": 21.375,
+     "z": 12.375
+    },
+    {
+     "x": 22.125,
+     "z": 12.375
+    },
+    {
+     "x": 22.875,
+     "z": 11.625
+    },
+    {
+     "x": 23.625,
+     "z": 10.875
+    }
+   ]
+  },
+  {
+   "tick": 11427,
+   "kind": "open"
+  },
+  {
+   "tick": 11487,
+   "kind": "skip"
+  },
+  {
+   "tick": 11629,
+   "kind": "weapon",
+   "weapon": "rocket"
+  },
+  {
+   "tick": 11630,
+   "kind": "aim",
+   "x": 0.4507736309250695,
+   "y": 0.8910065241883678,
+   "z": -0.05394911969988712,
+   "power": 0.7500000000000001
+  },
+  {
+   "tick": 11674,
+   "kind": "fire",
+   "power": 0.7500000000000001
+  },
+  {
+   "tick": 12140,
+   "kind": "weapon",
+   "weapon": "rocket"
+  },
+  {
+   "tick": 12141,
+   "kind": "aim",
+   "x": -0.5798063107097584,
+   "y": 0.7771459614569708,
+   "z": -0.24468100999517603,
+   "power": 1.0000000000000002
+  },
+  {
+   "tick": 12185,
+   "kind": "fire",
+   "power": 1.0000000000000002
+  },
+  {
+   "tick": 12641,
+   "kind": "weapon",
+   "weapon": "rocket"
+  },
+  {
+   "tick": 12642,
+   "kind": "aim",
+   "x": 0.5772445555245396,
+   "y": 0.7771459614569708,
+   "z": 0.250664871309079,
+   "power": 0.9000000000000002
+  },
+  {
+   "tick": 12686,
+   "kind": "fire",
+   "power": 0.9000000000000002
+  },
+  {
+   "tick": 13175,
+   "kind": "weapon",
+   "weapon": "rocket"
+  },
+  {
+   "tick": 13176,
+   "kind": "aim",
+   "x": -0.607288041613967,
+   "y": 0.7771459614569708,
+   "z": -0.16506177359944085,
+   "power": 0.9000000000000002
+  },
+  {
+   "tick": 13220,
+   "kind": "fire",
+   "power": 0.9000000000000002
+  },
+  {
+   "tick": 13691,
+   "kind": "weapon",
+   "weapon": "rocket"
+  },
+  {
+   "tick": 13692,
+   "kind": "aim",
+   "x": 0.4623194334328153,
+   "y": 0.7771459614569708,
+   "z": 0.4269717743147445,
+   "power": 0.44999999999999996
+  },
+  {
+   "tick": 13736,
+   "kind": "fire",
+   "power": 0.44999999999999996
+  },
+  {
+   "tick": 14187,
+   "kind": "weapon",
+   "weapon": "rocket"
+  },
+  {
+   "tick": 14188,
+   "kind": "aim",
+   "x": -0.6261581102668254,
+   "y": 0.7771459614569708,
+   "z": -0.06300932897752874,
+   "power": 0.9000000000000002
+  },
+  {
+   "tick": 14232,
+   "kind": "fire",
+   "power": 0.9000000000000002
+  },
+  {
+   "tick": 14695,
+   "kind": "path",
+   "points": [
+    {
+     "x": -19.125,
+     "z": -6.375
+    },
+    {
+     "x": -18.375,
+     "z": -6.375
+    },
+    {
+     "x": -17.625,
+     "z": -5.625
+    },
+    {
+     "x": -16.875,
+     "z": -4.875
+    },
+    {
+     "x": -16.125,
+     "z": -4.125
+    }
+   ]
+  },
+  {
+   "tick": 14930,
+   "kind": "weapon",
+   "weapon": "rocket"
+  },
+  {
+   "tick": 14931,
+   "kind": "aim",
+   "x": 0.5415226248477957,
+   "y": 0.8191520442889918,
+   "z": 0.18905865522403129,
+   "power": 0.9500000000000003
+  },
+  {
+   "tick": 14975,
+   "kind": "fire",
+   "power": 0.9500000000000003
+  },
+  {
+   "tick": 15473,
+   "kind": "path",
+   "points": [
+    {
+     "x": 22.875,
+     "z": 10.875
+    },
+    {
+     "x": 22.125,
+     "z": 11.625
+    },
+    {
+     "x": 21.375,
+     "z": 11.625
+    },
+    {
+     "x": 20.625,
+     "z": 11.625
+    },
+    {
+     "x": 19.875,
+     "z": 10.875
+    }
+   ]
+  },
+  {
+   "tick": 15705,
+   "kind": "skip"
+  },
+  {
+   "tick": 15847,
+   "kind": "path",
+   "points": [
+    {
+     "x": -18.375,
+     "z": -7.125
+    },
+    {
+     "x": -17.625,
+     "z": -6.375
+    },
+    {
+     "x": -16.875,
+     "z": -5.625
+    },
+    {
+     "x": -16.125,
+     "z": -4.875
+    }
+   ]
+  },
+  {
+   "tick": 16077,
+   "kind": "skip"
+  },
+  {
+   "tick": 16592,
+   "kind": "weapon",
+   "weapon": "rocket"
+  },
+  {
+   "tick": 16593,
+   "kind": "aim",
+   "x": -0.33425947260099054,
+   "y": 0.9205048534524403,
+   "z": -0.20233986198228257,
+   "power": 1.0000000000000002
+  },
+  {
+   "tick": 16637,
+   "kind": "fire",
+   "power": 1.0000000000000002
+  },
+  {
+   "tick": 17126,
+   "kind": "path",
+   "points": [
+    {
+     "x": -16.875,
+     "z": -2.625
+    },
+    {
+     "x": -16.125,
+     "z": -1.875
+    },
+    {
+     "x": -15.375,
+     "z": -1.125
+    },
+    {
+     "x": -14.625,
+     "z": -0.375
+    }
+   ]
+  },
+  {
+   "tick": 17361,
+   "kind": "skip"
+  },
+  {
+   "tick": 17503,
+   "kind": "weapon",
+   "weapon": "rocket"
+  },
+  {
+   "tick": 17504,
+   "kind": "aim",
+   "x": -0.5625989959989677,
+   "y": 0.8191520442889918,
+   "z": -0.11167944322085024,
+   "power": 1.0000000000000002
+  },
+  {
+   "tick": 17548,
+   "kind": "fire",
+   "power": 1.0000000000000002
+  },
+  {
+   "tick": 18040,
+   "kind": "path",
+   "points": [
+    {
+     "x": -5.625,
+     "z": -1.875
+    },
+    {
+     "x": -4.875,
+     "z": -1.875
+    },
+    {
+     "x": -4.125,
+     "z": -1.875
+    },
+    {
+     "x": -3.375,
+     "z": -1.875
+    }
+   ]
+  },
+  {
+   "tick": 18134,
+   "kind": "open"
+  },
+  {
+   "tick": 18164,
+   "kind": "weapon",
+   "weapon": "rocket"
+  },
+  {
+   "tick": 18165,
+   "kind": "aim",
+   "x": 0.21212569447501697,
+   "y": 0.9659258262890683,
+   "z": 0.14829021495456945,
+   "power": 0.65
+  },
+  {
+   "tick": 18209,
+   "kind": "fire",
+   "power": 0.65
+  },
+  {
+   "tick": 18707,
+   "kind": "path",
+   "points": [
+    {
+     "x": 19.125,
+     "z": 11.625
+    },
+    {
+     "x": 18.375,
+     "z": 11.625
+    },
+    {
+     "x": 17.625,
+     "z": 11.625
+    },
+    {
+     "x": 16.875,
+     "z": 11.625
+    },
+    {
+     "x": 16.125,
+     "z": 12.375
+    }
+   ]
+  },
+  {
+   "tick": 18939,
+   "kind": "skip"
+  },
+  {
+   "tick": 19081,
+   "kind": "weapon",
+   "weapon": "rocket"
+  },
+  {
+   "tick": 19082,
+   "kind": "aim",
+   "x": 0.4891023736000488,
+   "y": 0.7771459614569708,
+   "z": 0.39600886698395865,
+   "power": 1.0000000000000002
+  },
+  {
+   "tick": 19126,
+   "kind": "fire",
+   "power": 1.0000000000000002
+  },
+  {
+   "tick": 20002,
+   "kind": "weapon",
+   "weapon": "rocket"
+  },
+  {
+   "tick": 20003,
+   "kind": "aim",
+   "x": -0.38177640575009375,
+   "y": 0.8571673007021122,
+   "z": -0.3457036225144229,
+   "power": 0.9500000000000003
+  },
+  {
+   "tick": 20047,
+   "kind": "fire",
+   "power": 0.9500000000000003
+  },
+  {
+   "tick": 20536,
+   "kind": "path",
+   "points": [
+    {
+     "x": -15.375,
+     "z": -4.125
+    },
+    {
+     "x": -14.625,
+     "z": -4.125
+    },
+    {
+     "x": -13.875,
+     "z": -3.375
+    },
+    {
+     "x": -13.125,
+     "z": -3.375
+    },
+    {
+     "x": -12.375,
+     "z": -3.375
+    }
+   ]
+  },
+  {
+   "tick": 20768,
+   "kind": "skip"
+  },
+  {
+   "tick": 20910,
+   "kind": "path",
+   "points": [
+    {
+     "x": 15.375,
+     "z": 12.375
+    },
+    {
+     "x": 14.625,
+     "z": 12.375
+    },
+    {
+     "x": 13.875,
+     "z": 11.625
+    },
+    {
+     "x": 13.125,
+     "z": 10.875
+    }
+   ]
+  },
+  {
+   "tick": 21018,
+   "kind": "open"
+  },
+  {
+   "tick": 21078,
+   "kind": "skip"
+  },
+  {
+   "tick": 21220,
+   "kind": "path",
+   "points": [
+    {
+     "x": -14.625,
+     "z": 0.375
+    },
+    {
+     "x": -14.625,
+     "z": 1.125
+    },
+    {
+     "x": -14.625,
+     "z": 1.875
+    },
+    {
+     "x": -14.625,
+     "z": 2.625
+    },
+    {
+     "x": -13.875,
+     "z": 3.375
+    }
+   ]
+  },
+  {
+   "tick": 21409,
+   "kind": "weapon",
+   "weapon": "rocket"
+  },
+  {
+   "tick": 21410,
+   "kind": "aim",
+   "x": 0.7620270478153315,
+   "y": 0.573576436351046,
+   "z": 0.3005409290940004,
+   "power": 0.9500000000000003
+  },
+  {
+   "tick": 21454,
+   "kind": "fire",
+   "power": 0.9500000000000003
+  },
+  {
+   "tick": 21906,
+   "kind": "weapon",
+   "weapon": "rocket"
+  },
+  {
+   "tick": 21907,
+   "kind": "aim",
+   "x": -0.5275872935918084,
+   "y": 0.7771459614569708,
+   "z": -0.3430682180435712,
+   "power": 1.0000000000000002
+  },
+  {
+   "tick": 21951,
+   "kind": "fire",
+   "power": 1.0000000000000002
+  },
+  {
+   "tick": 22454,
+   "kind": "path",
+   "points": [
+    {
+     "x": -15.375,
+     "z": -4.125
+    },
+    {
+     "x": -14.625,
+     "z": -3.375
+    },
+    {
+     "x": -13.875,
+     "z": -3.375
+    },
+    {
+     "x": -13.125,
+     "z": -3.375
+    },
+    {
+     "x": -12.375,
+     "z": -3.375
+    },
+    {
+     "x": -11.625,
+     "z": -4.125
+    }
+   ]
+  },
+  {
+   "tick": 22719,
+   "kind": "skip"
+  },
+  {
+   "tick": 22861,
+   "kind": "path",
+   "points": [
+    {
+     "x": 13.125,
+     "z": 9.375
+    }
+   ]
+  },
+  {
+   "tick": 22939,
+   "kind": "skip"
+  },
+  {
+   "tick": 23081,
+   "kind": "path",
+   "points": [
+    {
+     "x": -11.625,
+     "z": -4.125
+    },
+    {
+     "x": -10.875,
+     "z": -4.875
+    },
+    {
+     "x": -10.125,
+     "z": -4.875
+    }
+   ]
+  },
+  {
+   "tick": 23247,
+   "kind": "skip"
+  },
+  {
+   "tick": 23762,
+   "kind": "path",
+   "points": [
+    {
+     "x": 19.125,
+     "z": 7.125
+    },
+    {
+     "x": 18.375,
+     "z": 6.375
+    }
+   ]
+  },
+  {
+   "tick": 23787,
+   "kind": "open"
+  },
+  {
+   "tick": 23817,
+   "kind": "weapon",
+   "weapon": "rocket"
+  },
+  {
+   "tick": 23818,
+   "kind": "aim",
+   "x": -0.7155706759659243,
+   "y": 0.6819983600624985,
+   "z": -0.1511186440176491,
+   "power": 0.9500000000000003
+  },
+  {
+   "tick": 23862,
+   "kind": "fire",
+   "power": 0.9500000000000003
+  },
+  {
+   "tick": 24347,
+   "kind": "weapon",
+   "weapon": "rocket"
+  },
+  {
+   "tick": 24348,
+   "kind": "aim",
+   "x": 0.5554115854779914,
+   "y": 0.8191520442889918,
+   "z": 0.14320579266911443,
+   "power": 0.9500000000000003
+  },
+  {
+   "tick": 24392,
+   "kind": "fire",
+   "power": 0.9500000000000003
+  },
+  {
+   "tick": 24884,
+   "kind": "weapon",
+   "weapon": "rocket"
+  },
+  {
+   "tick": 24885,
+   "kind": "aim",
+   "x": -0.4842508381015394,
+   "y": 0.8571673007021122,
+   "z": -0.1754005256691422,
+   "power": 0.8500000000000002
+  },
+  {
+   "tick": 24929,
+   "kind": "fire",
+   "power": 0.8500000000000002
+  },
+  {
+   "tick": 25437,
+   "kind": "weapon",
+   "weapon": "rocket"
+  },
+  {
+   "tick": 25438,
+   "kind": "aim",
+   "x": 0.32446875537268766,
+   "y": 0.9455185755993167,
+   "z": -0.02673293817630356,
+   "power": 1.0000000000000002
+  },
+  {
+   "tick": 25482,
+   "kind": "fire",
+   "power": 1.0000000000000002
+  },
+  {
+   "tick": 26006,
+   "kind": "path",
+   "points": [
+    {
+     "x": 17.625,
+     "z": 4.875
+    },
+    {
+     "x": 16.875,
+     "z": 4.875
+    },
+    {
+     "x": 16.125,
+     "z": 4.875
+    },
+    {
+     "x": 15.375,
+     "z": 4.125
+    },
+    {
+     "x": 14.625,
+     "z": 3.375
+    }
+   ]
+  },
+  {
+   "tick": 26216,
+   "kind": "weapon",
+   "weapon": "rocket"
+  },
+  {
+   "tick": 26217,
+   "kind": "aim",
+   "x": -0.29519594678041067,
+   "y": 0.9455185755993167,
+   "z": -0.13730978188408874,
+   "power": 1.0000000000000002
+  },
+  {
+   "tick": 26261,
+   "kind": "fire",
+   "power": 1.0000000000000002
+  },
+  {
+   "tick": 26801,
+   "kind": "weapon",
+   "weapon": "rocket"
+  },
+  {
+   "tick": 26802,
+   "kind": "aim",
+   "x": 0.3249832605211458,
+   "y": 0.9455185755993167,
+   "z": 0.019506500908265542,
+   "power": 0.9500000000000003
+  },
+  {
+   "tick": 26846,
+   "kind": "fire",
+   "power": 0.9500000000000003
+  },
+  {
+   "tick": 27358,
+   "kind": "weapon",
+   "weapon": "rocket"
+  },
+  {
+   "tick": 27359,
+   "kind": "aim",
+   "x": -0.5857922366720907,
+   "y": 0.7771459614569708,
+   "z": -0.22998176024595882,
+   "power": 1.0000000000000002
+  },
+  {
+   "tick": 27403,
+   "kind": "fire",
+   "power": 1.0000000000000002
+  },
+  {
+   "tick": 27908,
+   "kind": "path",
+   "points": [
+    {
+     "x": -12.375,
+     "z": -4.125
+    }
+   ]
+  },
+  {
+   "tick": 27974,
+   "kind": "skip"
+  },
+  {
+   "tick": 28116,
+   "kind": "weapon",
+   "weapon": "rocket"
+  },
+  {
+   "tick": 28117,
+   "kind": "aim",
+   "x": -0.2508697407079791,
+   "y": 0.9455185755993167,
+   "z": -0.20750661771073808,
+   "power": 1.0000000000000002
+  },
+  {
+   "tick": 28161,
+   "kind": "fire",
+   "power": 1.0000000000000002
+  },
+  {
+   "tick": 28704,
+   "kind": "weapon",
+   "weapon": "rocket"
+  },
+  {
+   "tick": 28705,
+   "kind": "aim",
+   "x": 0.25859461637221903,
+   "y": 0.9659258262890683,
+   "z": -0.010776014619772008,
+   "power": 0.9500000000000003
+  },
+  {
+   "tick": 28749,
+   "kind": "fire",
+   "power": 0.9500000000000003
+  },
+  {
+   "tick": 29634,
+   "kind": "weapon",
+   "weapon": "rocket"
+  },
+  {
+   "tick": 29635,
+   "kind": "aim",
+   "x": -0.24925563726202615,
+   "y": 0.9659258262890683,
+   "z": -0.06970599257511434,
+   "power": 0.9500000000000003
+  },
+  {
+   "tick": 29679,
+   "kind": "fire",
+   "power": 0.9500000000000003
+  },
+  {
+   "tick": 30219,
+   "kind": "path",
+   "points": [
+    {
+     "x": -12.375,
+     "z": -4.875
+    }
+   ]
+  },
+  {
+   "tick": 30263,
+   "kind": "weapon",
+   "weapon": "rocket"
+  },
+  {
+   "tick": 30264,
+   "kind": "aim",
+   "x": 0.33133324856470087,
+   "y": 0.9205048534524403,
+   "z": 0.20709682075315317,
+   "power": 1.0000000000000002
+  },
+  {
+   "tick": 30308,
+   "kind": "fire",
+   "power": 1.0000000000000002
+  },
+  {
+   "tick": 30857,
+   "kind": "skip"
+  },
+  {
+   "tick": 30999,
+   "kind": "weapon",
+   "weapon": "rocket"
+  },
+  {
+   "tick": 31000,
+   "kind": "aim",
+   "x": 0.5715148025487514,
+   "y": 0.8191520442889918,
+   "z": -0.048587640453383374,
+   "power": 1.0000000000000002
+  },
+  {
+   "tick": 31044,
+   "kind": "fire",
+   "power": 1.0000000000000002
+  }
+ ]
+}

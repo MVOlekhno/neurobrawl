@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/png" href="./assets/playcanvas-ysrUGN-S.png" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no" />
+        <title>Нейробой</title>
+        <script>
+            // Telegram's SDK only inside Telegram (its launch parameters in the address, its webview's bridge, or its
+            // web client's frame), and never waited for: where telegram.org is slow to reach, the page's load waited
+            // half a minute for it (platform/telegram.ts sets up when it arrives)
+            if (/tgWebApp/.test(location.hash) || 'TelegramWebviewProxy' in window || window.parent !== window) {
+                const sdk = document.createElement('script');
+                sdk.id = 'tg-sdk';
+                sdk.async = true;
+                sdk.src = 'https://telegram.org/js/telegram-web-app.js';
+                document.head.appendChild(sdk);
+            }
+        </script>
+      <script type="module" crossorigin src="./assets/index-BxjXSrhY.js"></script>
+      <link rel="modulepreload" crossorigin href="./assets/math-CU6fqs7B.js">
+      <link rel="modulepreload" crossorigin href="./assets/entity-CR8uPktr.js">
+      <link rel="modulepreload" crossorigin href="./assets/color-B2riDHUn.js">
+      <link rel="modulepreload" crossorigin href="./assets/texture-C9p0zbK8.js">
+      <link rel="modulepreload" crossorigin href="./assets/layers-BqIifURe.js">
+      <link rel="modulepreload" crossorigin href="./assets/worm-view-4FBLBaTt.js">
+      <link rel="modulepreload" crossorigin href="./assets/ski-view-aX5tzq0U.js">
+      <link rel="modulepreload" crossorigin href="./assets/ordnance-BPOnq0Me.js">
+      <link rel="modulepreload" crossorigin href="./assets/hermes-view-2SwYdcwa.js">
+      <link rel="modulepreload" crossorigin href="./assets/roster-Djw6lLiq.js">
+      <link rel="stylesheet" crossorigin href="./assets/index-C7TPpO8O.css">
+    </head>
+    <body>
+        <canvas id="application-canvas"></canvas>
+        <div id="hint" class="hint"></div>
+        <div id="hud" class="hud" hidden></div>
+        <div id="labels" class="labels"></div>
+        <button id="next-worm" class="next-worm" type="button" hidden></button>
+        <a id="credits" class="credits" target="_blank" rel="noopener" hidden></a>
+        <div id="toast" class="toast" hidden></div>
+    </body>
+</html>

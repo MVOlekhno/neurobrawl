@@ -1,0 +1,318 @@
+{
+    "version": 1,
+    "id": "aquarium",
+    "name": {
+        "ru": "Аквариум",
+        "en": "Aquarium"
+    },
+    "source": {
+        "title": "Аквариум",
+        "author": "Нейробой (tools/level-aquarium.ts)",
+        "url": "",
+        "license": "own work",
+        "licenseUrl": ""
+    },
+    "teams": 4,
+    "waterLevel": -3,
+    "playPlaneZ": 0,
+    "cutaway": false,
+    "arena3d": true,
+    "density": {
+        "origin": [-15.5, -1, -6.5],
+        "voxel": 0.25,
+        "dims": [124, 68, 52],
+        "scale": 0.03125,
+        "encoding": "int8",
+        "layout": "x-fastest",
+        "file": "density.gz.bin",
+        "compression": "gzip",
+        "edge": 16,
+        "solidFraction": 0.2302
+    },
+    "densityFine": {
+        "file": "density-fine.gz.bin",
+        "voxel": 0.125,
+        "dims": [248, 136, 104],
+        "scale": 0.015625,
+        "encoding": "int8",
+        "layout": "x-fastest",
+        "compression": "gzip"
+    },
+    "ground": {
+        "file": "ground.png",
+        "cell": 0.5,
+        "dims": [62, 34, 26],
+        "tiles": [4, 7],
+        "set": "ghetto",
+        "note": "r gravel, g castle plaster, b driftwood, a plastic; rock where they add up to less than 1 (tools/level-aquarium.ts; the ghetto set stands in until the tank has its own)"
+    },
+    "meshFloor": -0.4,
+    "fx": "underwater",
+    "mood": {
+        "swing": [0.6, 0.63],
+        "cycle": 900,
+        "weather": "clear",
+        "sky": "sunset",
+        "skyRotation": 90
+    },
+    "rules": {
+        "dive": {
+            "gravity": 0.55,
+            "speed": 0.75,
+            "drag": 0.08,
+            "ceiling": 15
+        },
+        "zones": [
+            {
+                "id": "bubbler",
+                "shape": "cylinder",
+                "x": -1.2,
+                "y": 0,
+                "z": -3.8,
+                "r": 1.2,
+                "h": 14,
+                "lift": 12
+            },
+            {
+                "id": "heater",
+                "shape": "box",
+                "x": 13.6,
+                "y": 0,
+                "z": -3.4,
+                "hx": 0.8,
+                "hz": 0.8,
+                "h": 11,
+                "damage": {
+                    "perTurn": 5
+                }
+            },
+            {
+                "id": "intake",
+                "shape": "box",
+                "x": 12.7,
+                "y": 0,
+                "z": -5.45,
+                "hx": 0.5,
+                "hz": 1.65,
+                "h": 5.5,
+                "sink": {
+                    "pull": 0.5,
+                    "reach": 3
+                }
+            }
+        ]
+    },
+    "roofCut": {
+        "boxes": [
+            [-12.4, -4.6, -7.6, -1.4],
+            [7.1, -4.9, 13, -2.8]
+        ]
+    },
+    "birds": {
+        "model": "gull",
+        "count": 0,
+        "height": [8, 10],
+        "radius": [4, 8]
+    },
+    "propCollision": true,
+    "floors": true,
+    "tank": {
+        "min": [-15.5, -6.5],
+        "max": [15.5, 6.5],
+        "floor": 0,
+        "surface": 15,
+        "hood": 16.6,
+        "cabinet": [0.32, 0.22, 0.14],
+        "wallpaper": [0.74, 0.64, 0.5],
+        "stone": [-1.2, -3.8]
+    },
+    "sea": {
+        "calm": true,
+        "shallow": [0.05, 0.08, 0.09],
+        "deep": [0.02, 0.04, 0.05],
+        "depthFade": 0.8
+    },
+    "spawns": [
+        [-8.4, 7.02, -2],
+        [-12.1, 10.614, -4.3],
+        [-10.4, 2.02, -3],
+        [-12.4, 7.027, -1.4],
+        [-5.6, 3.206, 2.6],
+        [-6.6, 3.64, 3.6],
+        [-10.6, 1.761, 4.2],
+        [-7.8, 3.104, 5.8],
+        [7.6, 4.385, -3.8],
+        [11, 4.317, -3.8],
+        [9.4, 0.926, -3.8],
+        [9.2, 1.575, -6.1],
+        [7, 5.833, 2],
+        [13.2, 3.6, 4.8],
+        [8.2, 2.026, 2],
+        [14.4, 1.522, 0.2]
+    ],
+    "spawnGroups": [
+        [0, 1, 2, 3],
+        [4, 5, 6, 7],
+        [8, 9, 10, 11],
+        [12, 13, 14, 15]
+    ],
+    "light": {
+        "direction": [0.85, -0.38, 0.12],
+        "color": [0.75, 0.9, 1],
+        "intensity": 1
+    },
+    "colours": {
+        "ambient": [0.3, 0.42, 0.45],
+        "innerRock": [0.55, 0.5, 0.42]
+    },
+    "bounds": {
+        "min": [-15.5, 0.1, -6.5],
+        "max": [15.5, 15, 6.5]
+    },
+    "props": [
+        {
+            "type": "fern_a",
+            "pos": [-6.2, 1.422, -5.8],
+            "yaw": 338.781,
+            "scale": 9
+        },
+        {
+            "type": "fern_a",
+            "pos": [-3, 1.305, -5.9],
+            "yaw": 78.576,
+            "scale": 11
+        },
+        {
+            "type": "fern_a",
+            "pos": [1.2, 1.473, -6],
+            "yaw": 244.489,
+            "scale": 8,
+            "detail": 1
+        },
+        {
+            "type": "fern_a",
+            "pos": [4.5, 1.294, -5.9],
+            "yaw": 132.09,
+            "scale": 12,
+            "detail": 1
+        },
+        {
+            "type": "fern_a",
+            "pos": [11.2, 1.472, -5.8],
+            "yaw": 112.244,
+            "scale": 9,
+            "detail": 1
+        },
+        {
+            "type": "fern_a",
+            "pos": [12.6, 3.633, -3.6],
+            "yaw": 124.73,
+            "scale": 7
+        },
+        {
+            "type": "fern_a",
+            "pos": [-14.6, 4.277, 2],
+            "yaw": 349.576,
+            "scale": 10
+        },
+        {
+            "type": "fern_a",
+            "pos": [-14.4, 1.4, 5.2],
+            "yaw": 212.237,
+            "scale": 8
+        },
+        {
+            "type": "jungle_bush_a",
+            "pos": [-6.4, 2.694, 1.6],
+            "yaw": 245.245,
+            "scale": 3.5
+        },
+        {
+            "type": "jungle_bush_a",
+            "pos": [-0.8, 1.515, 5.6],
+            "yaw": 41.883,
+            "scale": 3,
+            "detail": 1
+        },
+        {
+            "type": "jungle_bush_a",
+            "pos": [6.2, 1.547, 4.6],
+            "yaw": 177.313,
+            "scale": 3.2
+        },
+        {
+            "type": "jungle_bush_a",
+            "pos": [9.4, 1.82, -1],
+            "yaw": 328.163,
+            "scale": 3,
+            "detail": 1
+        },
+        {
+            "type": "jungle_bush_a",
+            "pos": [2.6, 3.306, 0.6],
+            "yaw": 218.517,
+            "scale": 2.4,
+            "detail": 1
+        },
+        {
+            "type": "jungle_bush_a",
+            "pos": [-8.4, 1.384, -6],
+            "yaw": 348.584,
+            "scale": 3.6
+        },
+        {
+            "type": "jungle_bush_b",
+            "pos": [14.2, 1.459, -1.6],
+            "yaw": 25.934,
+            "scale": 3.4
+        },
+        {
+            "type": "jungle_bush_b",
+            "pos": [-12, 1.792, 2.6],
+            "yaw": 338.737,
+            "scale": 3,
+            "detail": 1
+        }
+    ],
+    "dj": {
+        "pos": [0, 3.4, -0.4],
+        "yaw": 0,
+        "outfit": "beach",
+        "stage": "player"
+    },
+    "solids": [
+        {
+            "kind": "box",
+            "c": [0, 3.9, -0.4],
+            "ax": [
+                [1, 0, 0],
+                [0, 1, 0],
+                [0, 0, 1]
+            ],
+            "half": [1.7, 0.5, 1.45],
+            "prop": -1
+        },
+        {
+            "kind": "box",
+            "c": [-2.7, 4.7, -0.4],
+            "ax": [
+                [1, 0, 0],
+                [0, 1, 0],
+                [0, 0, 1]
+            ],
+            "half": [0.8, 1.3, 0.65],
+            "prop": -1
+        },
+        {
+            "kind": "box",
+            "c": [2.7, 4.7, -0.4],
+            "ax": [
+                [1, 0, 0],
+                [0, 1, 0],
+                [0, 0, 1]
+            ],
+            "half": [0.8, 1.3, 0.65],
+            "prop": -1
+        }
+    ]
+}

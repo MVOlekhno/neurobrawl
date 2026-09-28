@@ -1,0 +1,13 @@
+{
+ "rate": 48000,
+ "sync": 0.1,
+ "sounds": {
+  "djPhonk": {
+   "at": 0.2,
+   "dur": 20.5714,
+   "gain": 1,
+   "loop": true
+  }
+ },
+ "bpm": 140
+}

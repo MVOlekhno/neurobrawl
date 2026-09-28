@@ -1,0 +1,12 @@
+{
+ "rate": 48000,
+ "sync": 0.1,
+ "sounds": {
+  "skiIdle": {
+   "at": 0.2,
+   "dur": 2,
+   "gain": 0.45,
+   "loop": true
+  }
+ }
+}

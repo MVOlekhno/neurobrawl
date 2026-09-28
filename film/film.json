@@ -1,0 +1,2630 @@
+{
+ "fps": 30,
+ "beat": 0.6,
+ "musicStart": 4.8,
+ "credits": [
+  "Музыка: НЕЙРОЧЕЛ",
+  "Бой посчитан симуляцией игры: 58 ходов, 15 бойцов"
+ ],
+ "frames": 7128,
+ "hideProps": [
+  4,
+  5,
+  6,
+  11,
+  12,
+  15,
+  21
+ ],
+ "shots": [
+  {
+   "id": "needle",
+   "beats": 8,
+   "sim": "hold",
+   "time": 0.97,
+   "weather": "clear",
+   "labels": "none",
+   "dj": {
+    "needle": [
+     0,
+     1
+    ]
+   },
+   "cam": {
+    "subject": "dj",
+    "local": [
+     -0.45,
+     1.25,
+     0.6
+    ],
+    "mode": "stage",
+    "from": [
+     35,
+     34,
+     1.6
+    ],
+    "to": [
+     28,
+     30,
+     1.25
+    ],
+    "fov": [
+     40,
+     40
+    ],
+    "clear": false
+   }
+  },
+  {
+   "id": "face",
+   "beats": 4,
+   "sim": "hold",
+   "time": 0.97,
+   "cam": {
+    "subject": "dj-head",
+    "mode": "head",
+    "from": [
+     0,
+     0,
+     1.3
+    ],
+    "to": [
+     0,
+     0,
+     1.05
+    ],
+    "fov": [
+     40,
+     40
+    ],
+    "clear": false
+   }
+  },
+  {
+   "id": "reveal",
+   "beats": 8,
+   "sim": "hold",
+   "time": 0.97,
+   "cam": {
+    "subject": "dj",
+    "local": [
+     0,
+     1.5,
+     0.1
+    ],
+    "mode": "stage",
+    "from": [
+     0,
+     6,
+     3.2
+    ],
+    "to": [
+     12,
+     18,
+     24
+    ],
+    "fov": [
+     45,
+     50
+    ],
+    "clear": false
+   }
+  },
+  {
+   "id": "t1-opus-aim",
+   "beats": 4,
+   "sim": {
+    "tick": 0
+   },
+   "time": 0.24,
+   "weather": "clear",
+   "labels": [
+    "opus"
+   ],
+   "bar": true,
+   "cam": {
+    "subject": "opus",
+    "lift": 0.25,
+    "mode": "behind",
+    "from": [
+     22,
+     10,
+     2.3
+    ],
+    "to": [
+     22,
+     10,
+     2
+    ],
+    "fov": [
+     42,
+     42
+    ]
+   },
+   "speed": 1
+  },
+  {
+   "id": "t1-rocket",
+   "beats": 3,
+   "sim": {
+    "tick": 144
+   },
+   "labels": "none",
+   "cam": {
+    "subject": "shell",
+    "mode": "chase",
+    "from": [
+     10,
+     18,
+     3
+    ],
+    "to": [
+     10,
+     18,
+     4
+    ]
+   },
+   "speed": 0.6852
+  },
+  {
+   "id": "t1-astra-sea",
+   "beats": 6,
+   "sim": {
+    "tick": 218
+   },
+   "speed": 0.5,
+   "labels": [
+    "astra"
+   ],
+   "cam": {
+    "subject": "astra",
+    "lift": 0.3,
+    "mode": "from:opus",
+    "from": [
+     25,
+     24,
+     6
+    ],
+    "to": [
+     25,
+     24,
+     7.5
+    ]
+   }
+  },
+  {
+   "id": "t2-gemini",
+   "beats": 3,
+   "sim": {
+    "tick": 497
+   },
+   "labels": [
+    "gemini"
+   ],
+   "cam": {
+    "subject": "gemini",
+    "lift": 0.25,
+    "mode": "behind",
+    "from": [
+     30,
+     14,
+     2.6
+    ],
+    "to": [
+     30,
+     14,
+     2.4
+    ]
+   },
+   "speed": 1
+  },
+  {
+   "id": "t2-grenade",
+   "beats": 5,
+   "sim": {
+    "tick": 605
+   },
+   "labels": "none",
+   "cam": {
+    "subject": "shell",
+    "mode": "chase",
+    "from": [
+     14,
+     18,
+     3.6
+    ],
+    "to": [
+     14,
+     18,
+     5.2
+    ]
+   },
+   "speed": 0.8833
+  },
+  {
+   "id": "t2-phi-hit",
+   "beats": 3,
+   "sim": {
+    "tick": 764
+   },
+   "labels": [
+    "phi"
+   ],
+   "cam": {
+    "subject": "phi",
+    "mode": "from:gemini",
+    "from": [
+     22,
+     18,
+     4.2
+    ],
+    "to": [
+     22,
+     18,
+     5.2
+    ]
+   },
+   "speed": 1
+  },
+  {
+   "id": "t3-llama-hit",
+   "beats": 4,
+   "sim": {
+    "tick": 1256
+   },
+   "labels": [
+    "glm",
+    "llama"
+   ],
+   "cam": {
+    "subject": "llama",
+    "mode": "from:glm",
+    "from": [
+     22,
+     18,
+     4.2
+    ],
+    "to": [
+     22,
+     18,
+     5.2
+    ]
+   },
+   "speed": 1
+  },
+  {
+   "id": "t4-grok",
+   "beats": 2,
+   "sim": {
+    "tick": 1572
+   },
+   "labels": [
+    "grok"
+   ],
+   "cam": {
+    "subject": "grok",
+    "lift": 0.25,
+    "mode": "behind",
+    "from": [
+     -20,
+     12,
+     2.4
+    ],
+    "to": [
+     -20,
+     12,
+     2.2
+    ]
+   },
+   "speed": 1
+  },
+  {
+   "id": "t4-gemini-hit",
+   "beats": 2,
+   "sim": {
+    "tick": 1803
+   },
+   "labels": [
+    "gemini"
+   ],
+   "cam": {
+    "subject": "gemini",
+    "mode": "from:grok",
+    "from": [
+     -22,
+     18,
+     4.2
+    ],
+    "to": [
+     -22,
+     18,
+     5.2
+    ]
+   },
+   "speed": 1
+  },
+  {
+   "id": "t5-qwen",
+   "beats": 3,
+   "sim": {
+    "tick": 2083
+   },
+   "labels": [
+    "qwen"
+   ],
+   "cam": {
+    "subject": "qwen",
+    "lift": 0.25,
+    "mode": "behind",
+    "from": [
+     18,
+     12,
+     2.4
+    ],
+    "to": [
+     18,
+     12,
+     2.2
+    ]
+   },
+   "speed": 1
+  },
+  {
+   "id": "t5-phi-hit",
+   "beats": 3,
+   "sim": {
+    "tick": 2350
+   },
+   "labels": [
+    "phi"
+   ],
+   "cam": {
+    "subject": "phi",
+    "mode": "from:qwen",
+    "from": [
+     22,
+     34,
+     4.2
+    ],
+    "to": [
+     22,
+     34,
+     5.2
+    ]
+   },
+   "speed": 1
+  },
+  {
+   "id": "dj-1",
+   "beats": 4,
+   "sim": "hold",
+   "labels": "none",
+   "cam": {
+    "subject": "dj",
+    "local": [
+     0,
+     1.8,
+     0.1
+    ],
+    "mode": "stage",
+    "from": [
+     20,
+     6,
+     3.2
+    ],
+    "to": [
+     -10,
+     6,
+     3.2
+    ],
+    "clear": false
+   }
+  },
+  {
+   "id": "t5-phi-tomb",
+   "beats": 3,
+   "sim": {
+    "tick": 2509
+   },
+   "labels": [
+    "phi"
+   ],
+   "cam": {
+    "subject": "phi",
+    "hold": true,
+    "mode": "from:qwen",
+    "from": [
+     55,
+     20,
+     2.8
+    ],
+    "to": [
+     55,
+     20,
+     2.3
+    ],
+    "fov": [
+     36,
+     36
+    ]
+   },
+   "speed": 1
+  },
+  {
+   "id": "t6-kimi",
+   "beats": 2,
+   "sim": {
+    "tick": 2666
+   },
+   "labels": [
+    "kimi"
+   ],
+   "cam": {
+    "subject": "kimi",
+    "lift": 0.25,
+    "mode": "behind",
+    "from": [
+     25,
+     12,
+     2.4
+    ],
+    "to": [
+     25,
+     12,
+     2.2
+    ]
+   },
+   "speed": 1
+  },
+  {
+   "id": "t6-mistral-hit",
+   "beats": 2,
+   "sim": {
+    "tick": 2897
+   },
+   "labels": [
+    "mistral"
+   ],
+   "cam": {
+    "subject": "mistral",
+    "mode": "from:kimi",
+    "from": [
+     22,
+     18,
+     4.2
+    ],
+    "to": [
+     22,
+     18,
+     5.2
+    ]
+   },
+   "speed": 1
+  },
+  {
+   "id": "t7-deepseek-rocket",
+   "beats": 4,
+   "sim": {
+    "tick": 3285
+   },
+   "labels": [
+    "deepseek"
+   ],
+   "cam": {
+    "subject": "shell",
+    "mode": "chase",
+    "from": [
+     15,
+     18,
+     3.2
+    ],
+    "to": [
+     15,
+     18,
+     4.5
+    ]
+   },
+   "speed": 0.7639
+  },
+  {
+   "id": "t7-qwen-hit",
+   "beats": 3,
+   "sim": {
+    "tick": 3395
+   },
+   "labels": [
+    "qwen"
+   ],
+   "cam": {
+    "subject": "qwen",
+    "mode": "from:deepseek",
+    "from": [
+     22,
+     18,
+     4.2
+    ],
+    "to": [
+     22,
+     18,
+     5.2
+    ]
+   },
+   "speed": 1
+  },
+  {
+   "id": "t8-llama",
+   "beats": 2,
+   "sim": {
+    "tick": 3711
+   },
+   "labels": [
+    "llama"
+   ],
+   "cam": {
+    "subject": "llama",
+    "lift": 0.25,
+    "mode": "behind",
+    "from": [
+     -18,
+     12,
+     2.4
+    ],
+    "to": [
+     -18,
+     12,
+     2.2
+    ]
+   },
+   "speed": 1
+  },
+  {
+   "id": "t8-glm-hit",
+   "beats": 2,
+   "sim": {
+    "tick": 3877
+   },
+   "labels": [
+    "glm"
+   ],
+   "cam": {
+    "subject": "glm",
+    "mode": "from:llama",
+    "from": [
+     -22,
+     18,
+     4.2
+    ],
+    "to": [
+     -22,
+     18,
+     5.2
+    ]
+   },
+   "speed": 1
+  },
+  {
+   "id": "t9-minimax",
+   "beats": 2,
+   "sim": {
+    "tick": 4193
+   },
+   "labels": [
+    "minimax"
+   ],
+   "cam": {
+    "subject": "minimax",
+    "lift": 0.25,
+    "mode": "behind",
+    "from": [
+     20,
+     12,
+     2.4
+    ],
+    "to": [
+     20,
+     12,
+     2.2
+    ]
+   },
+   "speed": 1
+  },
+  {
+   "id": "t9-llama-hit",
+   "beats": 2,
+   "sim": {
+    "tick": 4393
+   },
+   "labels": [
+    "llama"
+   ],
+   "cam": {
+    "subject": "llama",
+    "mode": "from:minimax",
+    "from": [
+     22,
+     18,
+     4.2
+    ],
+    "to": [
+     22,
+     18,
+     5.2
+    ]
+   },
+   "speed": 1
+  },
+  {
+   "id": "clouds",
+   "beats": 4,
+   "sim": {
+    "tick": 4500
+   },
+   "weather": "clouds",
+   "time": 0.3,
+   "labels": "none",
+   "bar": true,
+   "cam": {
+    "subject": "island",
+    "from": [
+     200,
+     8,
+     38
+    ],
+    "to": [
+     214,
+     8,
+     38
+    ]
+   },
+   "speed": 1
+  },
+  {
+   "id": "hermes-ring",
+   "beats": 4,
+   "sim": {
+    "tick": 4644
+   },
+   "cam": {
+    "subject": "drop",
+    "mode": "abs",
+    "from": [
+     30,
+     28,
+     8
+    ],
+    "to": [
+     34,
+     24,
+     7
+    ]
+   },
+   "speed": 1
+  },
+  {
+   "id": "hermes-flyover",
+   "beats": 5,
+   "sim": "run",
+   "cam": {
+    "subject": "hermes",
+    "eye": {
+     "at": "drop",
+     "offset": [
+      8,
+      2.5,
+      6
+     ]
+    },
+    "fov": [
+     55,
+     55
+    ]
+   }
+  },
+  {
+   "id": "capsule-fall",
+   "beats": 3,
+   "sim": "run",
+   "cam": {
+    "subject": "capsule",
+    "eye": {
+     "at": "drop",
+     "offset": [
+      4,
+      1.2,
+      3
+     ]
+    },
+    "fov": [
+     50,
+     50
+    ]
+   }
+  },
+  {
+   "id": "t10-nova",
+   "beats": 4,
+   "speed": 0.55,
+   "sim": {
+    "tick": 5076
+   },
+   "labels": [
+    "nova"
+   ],
+   "cam": {
+    "subject": "nova",
+    "lift": 0.5,
+    "mode": "behind",
+    "from": [
+     150,
+     8,
+     1.8
+    ],
+    "to": [
+     150,
+     8,
+     1.5
+    ],
+    "fov": [
+     38,
+     38
+    ]
+   }
+  },
+  {
+   "id": "t10-grenade",
+   "beats": 5,
+   "sim": {
+    "tick": 5155
+   },
+   "labels": "none",
+   "cam": {
+    "subject": "shell",
+    "mode": "chase",
+    "from": [
+     14,
+     18,
+     3.6
+    ],
+    "to": [
+     14,
+     18,
+     5.2
+    ]
+   },
+   "speed": 0.8833
+  },
+  {
+   "id": "t10-gemini-hit",
+   "beats": 4,
+   "sim": {
+    "tick": 5314
+   },
+   "labels": [
+    "gemini"
+   ],
+   "cam": {
+    "subject": "gemini",
+    "mode": "from:nova",
+    "from": [
+     22,
+     34,
+     4.2
+    ],
+    "to": [
+     22,
+     34,
+     5.2
+    ]
+   },
+   "speed": 1
+  },
+  {
+   "id": "t10-gemini-tomb",
+   "beats": 4,
+   "sim": {
+    "tick": 5472
+   },
+   "labels": [
+    "gemini"
+   ],
+   "cam": {
+    "subject": "gemini",
+    "hold": true,
+    "mode": "from:nova",
+    "from": [
+     55,
+     20,
+     2.8
+    ],
+    "to": [
+     55,
+     20,
+     2.3
+    ],
+    "fov": [
+     36,
+     36
+    ]
+   },
+   "speed": 1
+  },
+  {
+   "id": "t12-cohere",
+   "beats": 3,
+   "sim": {
+    "tick": 6101
+   },
+   "labels": [
+    "cohere"
+   ],
+   "cam": {
+    "subject": "cohere",
+    "lift": 0.25,
+    "mode": "behind",
+    "from": [
+     22,
+     12,
+     2.4
+    ],
+    "to": [
+     22,
+     12,
+     2.2
+    ]
+   },
+   "speed": 1
+  },
+  {
+   "id": "t12-rocket",
+   "beats": 3,
+   "sim": {
+    "tick": 6209
+   },
+   "labels": "none",
+   "cam": {
+    "subject": "shell",
+    "mode": "chase",
+    "from": [
+     10,
+     18,
+     3
+    ],
+    "to": [
+     10,
+     18,
+     4
+    ]
+   },
+   "speed": 0.8148
+  },
+  {
+   "id": "t12-mistral-sea",
+   "beats": 6,
+   "sim": {
+    "tick": 6297
+   },
+   "speed": 0.5,
+   "labels": [
+    "mistral"
+   ],
+   "cam": {
+    "subject": "mistral",
+    "lift": 0.3,
+    "mode": "from:cohere",
+    "from": [
+     25,
+     24,
+     6
+    ],
+    "to": [
+     25,
+     24,
+     7.5
+    ]
+   }
+  },
+  {
+   "id": "t13-opus",
+   "beats": 3,
+   "sim": {
+    "tick": 6577
+   },
+   "labels": [
+    "opus"
+   ],
+   "cam": {
+    "subject": "opus",
+    "lift": 0.25,
+    "mode": "behind",
+    "from": [
+     -22,
+     12,
+     2.4
+    ],
+    "to": [
+     -22,
+     12,
+     2.2
+    ]
+   },
+   "speed": 1
+  },
+  {
+   "id": "t13-glm-hit",
+   "beats": 4,
+   "sim": {
+    "tick": 6806
+   },
+   "labels": [
+    "glm"
+   ],
+   "cam": {
+    "subject": "glm",
+    "mode": "from:opus",
+    "from": [
+     -22,
+     18,
+     4.2
+    ],
+    "to": [
+     -22,
+     18,
+     5.2
+    ]
+   },
+   "speed": 1
+  },
+  {
+   "id": "dj-2",
+   "beats": 5,
+   "sim": "hold",
+   "labels": "none",
+   "cam": {
+    "subject": "dj",
+    "local": [
+     -0.4,
+     1.4,
+     0.5
+    ],
+    "mode": "stage",
+    "from": [
+     -35,
+     20,
+     1.8
+    ],
+    "to": [
+     -20,
+     16,
+     1.6
+    ],
+    "clear": false
+   }
+  },
+  {
+   "id": "t13-glm-tomb",
+   "beats": 4,
+   "sim": {
+    "tick": 6965
+   },
+   "labels": [
+    "glm"
+   ],
+   "cam": {
+    "subject": "glm",
+    "hold": true,
+    "mode": "from:opus",
+    "from": [
+     -55,
+     20,
+     2.8
+    ],
+    "to": [
+     -55,
+     20,
+     2.3
+    ],
+    "fov": [
+     36,
+     36
+    ]
+   },
+   "speed": 1
+  },
+  {
+   "id": "t16-grok",
+   "beats": 3,
+   "sim": {
+    "tick": 8111
+   },
+   "labels": [
+    "grok"
+   ],
+   "cam": {
+    "subject": "grok",
+    "lift": 0.25,
+    "mode": "behind",
+    "from": [
+     20,
+     12,
+     2.4
+    ],
+    "to": [
+     20,
+     12,
+     2.2
+    ]
+   },
+   "speed": 1
+  },
+  {
+   "id": "t16-grenade",
+   "beats": 5,
+   "sim": {
+    "tick": 8219
+   },
+   "labels": "none",
+   "cam": {
+    "subject": "shell",
+    "mode": "chase",
+    "from": [
+     14,
+     18,
+     3.6
+    ],
+    "to": [
+     14,
+     18,
+     5.2
+    ]
+   },
+   "speed": 0.8833
+  },
+  {
+   "id": "t16-llama-hit",
+   "beats": 3,
+   "sim": {
+    "tick": 8378
+   },
+   "labels": [
+    "llama"
+   ],
+   "cam": {
+    "subject": "llama",
+    "mode": "from:grok",
+    "from": [
+     22,
+     18,
+     4.2
+    ],
+    "to": [
+     22,
+     18,
+     5.2
+    ]
+   },
+   "speed": 1
+  },
+  {
+   "id": "t16-llama-tomb",
+   "beats": 4,
+   "sim": {
+    "tick": 8537
+   },
+   "labels": [
+    "llama"
+   ],
+   "cam": {
+    "subject": "llama",
+    "hold": true,
+    "mode": "from:grok",
+    "from": [
+     55,
+     20,
+     2.8
+    ],
+    "to": [
+     55,
+     20,
+     2.3
+    ],
+    "fov": [
+     36,
+     36
+    ]
+   },
+   "speed": 1
+  },
+  {
+   "id": "t18-kimi-capsule",
+   "beats": 4,
+   "sim": {
+    "tick": 9229
+   },
+   "labels": [
+    "kimi"
+   ],
+   "cam": {
+    "subject": "kimi",
+    "lift": 0.3,
+    "mode": "behind",
+    "from": [
+     40,
+     16,
+     3
+    ],
+    "to": [
+     40,
+     16,
+     2.6
+    ]
+   },
+   "speed": 1
+  },
+  {
+   "id": "t18-kimi-rocket",
+   "beats": 3,
+   "sim": {
+    "tick": 9400
+   },
+   "labels": "none",
+   "cam": {
+    "subject": "shell",
+    "mode": "chase",
+    "from": [
+     12,
+     18,
+     3
+    ],
+    "to": [
+     12,
+     18,
+     4
+    ]
+   },
+   "speed": 1.3241
+  },
+  {
+   "id": "t18-grok-hit",
+   "beats": 3,
+   "sim": {
+    "tick": 9543
+   },
+   "labels": [
+    "grok"
+   ],
+   "cam": {
+    "subject": "grok",
+    "mode": "from:kimi",
+    "from": [
+     22,
+     18,
+     4.2
+    ],
+    "to": [
+     22,
+     18,
+     5.2
+    ]
+   },
+   "speed": 1
+  },
+  {
+   "id": "hermes-2",
+   "beats": 5,
+   "sim": {
+    "tick": 9920
+   },
+   "labels": "none",
+   "cam": {
+    "subject": "hermes",
+    "eye": {
+     "at": "drop",
+     "offset": [
+      -7,
+      7,
+      7
+     ]
+    },
+    "fov": [
+     55,
+     55
+    ]
+   },
+   "speed": 1
+  },
+  {
+   "id": "capsule-2",
+   "beats": 3,
+   "sim": "run",
+   "cam": {
+    "subject": "capsule",
+    "eye": {
+     "at": "drop",
+     "offset": [
+      -4,
+      5,
+      4
+     ]
+    },
+    "fov": [
+     50,
+     50
+    ]
+   }
+  },
+  {
+   "id": "t19-deepseek",
+   "beats": 3,
+   "speed": 0.85,
+   "sim": {
+    "tick": 10212
+   },
+   "labels": [
+    "deepseek"
+   ],
+   "cam": {
+    "subject": "deepseek",
+    "lift": 0.25,
+    "mode": "behind",
+    "from": [
+     20,
+     12,
+     2.4
+    ],
+    "to": [
+     20,
+     12,
+     2.2
+    ]
+   }
+  },
+  {
+   "id": "t19-qwen-hit",
+   "beats": 3,
+   "sim": {
+    "tick": 10393
+   },
+   "labels": [
+    "qwen"
+   ],
+   "cam": {
+    "subject": "qwen",
+    "mode": "from:deepseek",
+    "from": [
+     22,
+     18,
+     4.2
+    ],
+    "to": [
+     22,
+     18,
+     5.2
+    ]
+   },
+   "speed": 1
+  },
+  {
+   "id": "t21-minimax-boots",
+   "beats": 5,
+   "sim": {
+    "tick": 11349
+   },
+   "labels": [
+    "minimax"
+   ],
+   "cam": {
+    "subject": "minimax",
+    "lift": 0.3,
+    "mode": "behind",
+    "from": [
+     30,
+     14,
+     3
+    ],
+    "to": [
+     30,
+     14,
+     2.6
+    ]
+   },
+   "speed": 1
+  },
+  {
+   "id": "t22-nova",
+   "beats": 3,
+   "sim": {
+    "tick": 11584
+   },
+   "labels": [
+    "nova"
+   ],
+   "cam": {
+    "subject": "nova",
+    "lift": 0.25,
+    "mode": "behind",
+    "from": [
+     -20,
+     12,
+     2.4
+    ],
+    "to": [
+     -20,
+     12,
+     2.2
+    ]
+   },
+   "speed": 1
+  },
+  {
+   "id": "t22-qwen-hit",
+   "beats": 3,
+   "sim": {
+    "tick": 11815
+   },
+   "labels": [
+    "qwen"
+   ],
+   "cam": {
+    "subject": "qwen",
+    "mode": "from:nova",
+    "from": [
+     -22,
+     18,
+     4.2
+    ],
+    "to": [
+     -22,
+     18,
+     5.2
+    ]
+   },
+   "speed": 1
+  },
+  {
+   "id": "t22-qwen-tomb",
+   "beats": 4,
+   "sim": {
+    "tick": 11974
+   },
+   "labels": [
+    "qwen"
+   ],
+   "cam": {
+    "subject": "qwen",
+    "hold": true,
+    "mode": "from:nova",
+    "from": [
+     -55,
+     20,
+     2.8
+    ],
+    "to": [
+     -55,
+     20,
+     2.3
+    ],
+    "fov": [
+     36,
+     36
+    ]
+   },
+   "speed": 1
+  },
+  {
+   "id": "t26-grok",
+   "beats": 3,
+   "sim": {
+    "tick": 13646
+   },
+   "labels": [
+    "grok"
+   ],
+   "cam": {
+    "subject": "grok",
+    "lift": 0.25,
+    "mode": "behind",
+    "from": [
+     20,
+     12,
+     2.4
+    ],
+    "to": [
+     20,
+     12,
+     2.2
+    ]
+   },
+   "speed": 1
+  },
+  {
+   "id": "t26-nemotron-sea",
+   "beats": 6,
+   "sim": {
+    "tick": 13862
+   },
+   "speed": 0.5,
+   "labels": [
+    "nemotron"
+   ],
+   "cam": {
+    "subject": "nemotron",
+    "lift": 0.3,
+    "mode": "from:grok",
+    "from": [
+     25,
+     24,
+     6
+    ],
+    "to": [
+     25,
+     24,
+     7.5
+    ]
+   }
+  },
+  {
+   "id": "storm",
+   "beats": 5,
+   "sim": {
+    "tick": 16121
+   },
+   "weather": "rain",
+   "time": 0.36,
+   "labels": "none",
+   "strike": [
+    1.2,
+    2.4
+   ],
+   "bar": true,
+   "cam": {
+    "subject": "island",
+    "from": [
+     150,
+     16,
+     34
+    ],
+    "to": [
+     160,
+     18,
+     34
+    ]
+   },
+   "speed": 1
+  },
+  {
+   "id": "hermes-3",
+   "beats": 5,
+   "sim": "run",
+   "strike": [
+    2.1
+   ],
+   "cam": {
+    "subject": "hermes",
+    "eye": {
+     "at": "drop",
+     "offset": [
+      7,
+      2.2,
+      -6
+     ]
+    },
+    "fov": [
+     55,
+     55
+    ]
+   }
+  },
+  {
+   "id": "capsule-3",
+   "beats": 3,
+   "sim": "run",
+   "cam": {
+    "subject": "capsule",
+    "eye": {
+     "at": "drop",
+     "offset": [
+      3.5,
+      1,
+      -3
+     ]
+    },
+    "fov": [
+     50,
+     50
+    ]
+   }
+  },
+  {
+   "id": "t31-cohere-rocket",
+   "beats": 5,
+   "sim": {
+    "tick": 16655
+   },
+   "labels": "none",
+   "cam": {
+    "subject": "shell",
+    "mode": "chase",
+    "from": [
+     12,
+     18,
+     3
+    ],
+    "to": [
+     12,
+     18,
+     4
+    ]
+   },
+   "speed": 0.8111
+  },
+  {
+   "id": "t31-grok-hit",
+   "beats": 3,
+   "sim": {
+    "tick": 16801
+   },
+   "labels": [
+    "grok"
+   ],
+   "cam": {
+    "subject": "grok",
+    "mode": "from:cohere",
+    "from": [
+     22,
+     18,
+     4.2
+    ],
+    "to": [
+     22,
+     18,
+     5.2
+    ]
+   },
+   "speed": 1
+  },
+  {
+   "id": "t34-grok-summit",
+   "beats": 6,
+   "sim": {
+    "tick": 18056
+   },
+   "labels": [
+    "grok"
+   ],
+   "strike": [
+    3
+   ],
+   "cam": {
+    "subject": "grok",
+    "lift": 0.3,
+    "mode": "from:dj",
+    "from": [
+     168,
+     28,
+     3.6
+    ],
+    "to": [
+     168,
+     28,
+     3
+    ]
+   },
+   "speed": 1
+  },
+  {
+   "id": "t36-deepseek",
+   "beats": 3,
+   "sim": {
+    "tick": 19036
+   },
+   "labels": [
+    "deepseek"
+   ],
+   "cam": {
+    "subject": "deepseek",
+    "lift": 0.25,
+    "mode": "behind",
+    "from": [
+     20,
+     12,
+     2.4
+    ],
+    "to": [
+     20,
+     12,
+     2.2
+    ]
+   },
+   "speed": 1
+  },
+  {
+   "id": "t36-cohere-hit",
+   "beats": 3,
+   "sim": {
+    "tick": 19304
+   },
+   "labels": [
+    "cohere"
+   ],
+   "cam": {
+    "subject": "cohere",
+    "mode": "from:deepseek",
+    "from": [
+     22,
+     18,
+     4.2
+    ],
+    "to": [
+     22,
+     18,
+     5.2
+    ]
+   },
+   "speed": 1
+  },
+  {
+   "id": "t36-cohere-tomb",
+   "beats": 4,
+   "sim": {
+    "tick": 19463
+   },
+   "labels": [
+    "cohere"
+   ],
+   "cam": {
+    "subject": "cohere",
+    "hold": true,
+    "mode": "from:deepseek",
+    "from": [
+     55,
+     20,
+     2.8
+    ],
+    "to": [
+     55,
+     20,
+     2.3
+    ],
+    "fov": [
+     36,
+     36
+    ]
+   },
+   "speed": 1
+  },
+  {
+   "id": "t37-kimi-rocket",
+   "beats": 5,
+   "sim": {
+    "tick": 20065
+   },
+   "labels": "none",
+   "strike": [
+    0.8
+   ],
+   "cam": {
+    "subject": "shell",
+    "mode": "chase",
+    "from": [
+     12,
+     18,
+     3
+    ],
+    "to": [
+     12,
+     18,
+     4
+    ]
+   },
+   "speed": 0.8111
+  },
+  {
+   "id": "t37-grok-hit",
+   "beats": 4,
+   "sim": {
+    "tick": 20211
+   },
+   "labels": [
+    "grok"
+   ],
+   "cam": {
+    "subject": "grok",
+    "mode": "from:kimi",
+    "from": [
+     22,
+     18,
+     4.2
+    ],
+    "to": [
+     22,
+     18,
+     5.2
+    ]
+   },
+   "speed": 1
+  },
+  {
+   "id": "t37-grok-tomb",
+   "beats": 4,
+   "sim": {
+    "tick": 20370
+   },
+   "labels": [
+    "grok"
+   ],
+   "cam": {
+    "subject": "grok",
+    "hold": true,
+    "mode": "from:kimi",
+    "from": [
+     55,
+     20,
+     2.8
+    ],
+    "to": [
+     55,
+     20,
+     2.3
+    ],
+    "fov": [
+     36,
+     36
+    ]
+   },
+   "speed": 1
+  },
+  {
+   "id": "t39-minimax-unstable",
+   "beats": 6,
+   "sim": {
+    "tick": 20940
+   },
+   "labels": [
+    "minimax"
+   ],
+   "cam": {
+    "subject": "minimax",
+    "lift": 0.3,
+    "mode": "behind",
+    "from": [
+     25,
+     14,
+     3.2
+    ],
+    "to": [
+     25,
+     14,
+     3.8
+    ]
+   },
+   "speed": 1
+  },
+  {
+   "id": "dj-3",
+   "beats": 4,
+   "sim": "hold",
+   "labels": "none",
+   "strike": [
+    0.6
+   ],
+   "cam": {
+    "subject": "dj",
+    "local": [
+     0,
+     1.8,
+     0.1
+    ],
+    "mode": "stage",
+    "from": [
+     25,
+     10,
+     3.5
+    ],
+    "to": [
+     10,
+     9,
+     3.2
+    ],
+    "clear": false
+   }
+  },
+  {
+   "id": "sunset",
+   "beats": 4,
+   "sim": {
+    "tick": 23297
+   },
+   "weather": "clear",
+   "time": 0.57,
+   "labels": "none",
+   "bar": true,
+   "cam": {
+    "subject": "island",
+    "from": [
+     250,
+     10,
+     40
+    ],
+    "to": [
+     258,
+     12,
+     40
+    ]
+   },
+   "speed": 1
+  },
+  {
+   "id": "hermes-5",
+   "beats": 5,
+   "sim": "run",
+   "cam": {
+    "subject": "hermes",
+    "eye": {
+     "at": "drop",
+     "offset": [
+      8,
+      2.5,
+      5
+     ]
+    },
+    "fov": [
+     55,
+     55
+    ]
+   }
+  },
+  {
+   "id": "t45-kimi-boots",
+   "beats": 4,
+   "sim": {
+    "tick": 23709
+   },
+   "labels": [
+    "kimi"
+   ],
+   "cam": {
+    "subject": "kimi",
+    "lift": 0.3,
+    "mode": "behind",
+    "from": [
+     30,
+     14,
+     3
+    ],
+    "to": [
+     30,
+     14,
+     2.6
+    ]
+   },
+   "speed": 1
+  },
+  {
+   "id": "t45-kimi-rocket",
+   "beats": 3,
+   "sim": {
+    "tick": 23880
+   },
+   "labels": "none",
+   "cam": {
+    "subject": "shell",
+    "mode": "chase",
+    "from": [
+     12,
+     18,
+     3
+    ],
+    "to": [
+     12,
+     18,
+     4
+    ]
+   },
+   "speed": 1.3148
+  },
+  {
+   "id": "t45-opus-hit",
+   "beats": 3,
+   "sim": {
+    "tick": 24022
+   },
+   "labels": [
+    "opus"
+   ],
+   "cam": {
+    "subject": "opus",
+    "mode": "from:kimi",
+    "from": [
+     22,
+     48,
+     4.2
+    ],
+    "to": [
+     22,
+     48,
+     5.2
+    ]
+   },
+   "speed": 1
+  },
+  {
+   "id": "t46-opus",
+   "beats": 3,
+   "sim": {
+    "tick": 24302
+   },
+   "labels": [
+    "opus"
+   ],
+   "cam": {
+    "subject": "opus",
+    "lift": 0.25,
+    "mode": "behind",
+    "from": [
+     20,
+     12,
+     2.4
+    ],
+    "to": [
+     20,
+     12,
+     2.2
+    ]
+   },
+   "speed": 1
+  },
+  {
+   "id": "t46-minimax-hit",
+   "beats": 3,
+   "sim": {
+    "tick": 24559
+   },
+   "labels": [
+    "minimax"
+   ],
+   "cam": {
+    "subject": "minimax",
+    "mode": "from:opus",
+    "from": [
+     22,
+     18,
+     4.2
+    ],
+    "to": [
+     22,
+     18,
+     5.2
+    ]
+   },
+   "speed": 1
+  },
+  {
+   "id": "t46-minimax-tomb",
+   "beats": 3,
+   "sim": {
+    "tick": 24718
+   },
+   "labels": [
+    "minimax"
+   ],
+   "cam": {
+    "subject": "minimax",
+    "hold": true,
+    "mode": "from:opus",
+    "from": [
+     55,
+     20,
+     2.8
+    ],
+    "to": [
+     55,
+     20,
+     2.3
+    ],
+    "fov": [
+     36,
+     36
+    ]
+   },
+   "speed": 1
+  },
+  {
+   "id": "t47-kimi-aim",
+   "beats": 3,
+   "sim": {
+    "tick": 24839
+   },
+   "time": 0.61,
+   "labels": [
+    "kimi"
+   ],
+   "cam": {
+    "subject": "kimi",
+    "lift": 0.25,
+    "mode": "behind",
+    "from": [
+     18,
+     10,
+     2.3
+    ],
+    "to": [
+     18,
+     10,
+     2
+    ]
+   },
+   "speed": 1
+  },
+  {
+   "id": "t47-rocket",
+   "beats": 5,
+   "sim": {
+    "tick": 24947
+   },
+   "labels": "none",
+   "cam": {
+    "subject": "shell",
+    "mode": "chase",
+    "from": [
+     10,
+     18,
+     3
+    ],
+    "to": [
+     10,
+     18,
+     4
+    ]
+   },
+   "speed": 0.9167
+  },
+  {
+   "id": "t47-opus-hit",
+   "beats": 5,
+   "sim": {
+    "tick": 25112
+   },
+   "speed": 0.5,
+   "labels": [
+    "opus"
+   ],
+   "cam": {
+    "subject": "opus",
+    "mode": "from:kimi",
+    "from": [
+     22,
+     16,
+     3.8
+    ],
+    "to": [
+     22,
+     16,
+     4.6
+    ]
+   }
+  },
+  {
+   "id": "t47-opus-tomb",
+   "beats": 3,
+   "sim": {
+    "tick": 25271
+   },
+   "labels": [
+    "opus"
+   ],
+   "cam": {
+    "subject": "opus",
+    "hold": true,
+    "mode": "from:kimi",
+    "from": [
+     55,
+     20,
+     2.8
+    ],
+    "to": [
+     55,
+     20,
+     2.3
+    ],
+    "fov": [
+     36,
+     36
+    ]
+   },
+   "speed": 1
+  },
+  {
+   "id": "night-dj",
+   "beats": 8,
+   "sim": "hold",
+   "time": 0.8,
+   "labels": "none",
+   "dj": {
+    "dance": 4
+   },
+   "bar": true,
+   "cam": {
+    "subject": "dj",
+    "local": [
+     0,
+     1,
+     -0.4
+    ],
+    "mode": "stage",
+    "from": [
+     85,
+     14,
+     3.4
+    ],
+    "to": [
+     100,
+     14,
+     3.4
+    ],
+    "clear": false
+   }
+  },
+  {
+   "id": "t48-deepseek",
+   "beats": 3,
+   "sim": {
+    "tick": 25392
+   },
+   "labels": [
+    "deepseek"
+   ],
+   "cam": {
+    "subject": "deepseek",
+    "lift": 0.25,
+    "mode": "behind",
+    "from": [
+     20,
+     12,
+     2.4
+    ],
+    "to": [
+     20,
+     12,
+     2.2
+    ]
+   },
+   "speed": 1
+  },
+  {
+   "id": "t48-kimi-hit",
+   "beats": 3,
+   "sim": {
+    "tick": 25681
+   },
+   "labels": [
+    "kimi"
+   ],
+   "cam": {
+    "subject": "kimi",
+    "mode": "from:deepseek",
+    "from": [
+     22,
+     18,
+     4.2
+    ],
+    "to": [
+     22,
+     18,
+     5.2
+    ]
+   },
+   "speed": 1
+  },
+  {
+   "id": "t51-kimi",
+   "beats": 3,
+   "sim": {
+    "tick": 27313
+   },
+   "labels": [
+    "kimi"
+   ],
+   "cam": {
+    "subject": "kimi",
+    "lift": 0.25,
+    "mode": "behind",
+    "from": [
+     -20,
+     12,
+     2.4
+    ],
+    "to": [
+     -20,
+     12,
+     2.2
+    ]
+   },
+   "speed": 1
+  },
+  {
+   "id": "t51-nova-hit",
+   "beats": 3,
+   "sim": {
+    "tick": 27583
+   },
+   "labels": [
+    "nova"
+   ],
+   "cam": {
+    "subject": "nova",
+    "mode": "from:kimi",
+    "from": [
+     -22,
+     18,
+     4.2
+    ],
+    "to": [
+     -22,
+     18,
+     5.2
+    ]
+   },
+   "speed": 1
+  },
+  {
+   "id": "t54-nova",
+   "beats": 3,
+   "sim": {
+    "tick": 28659
+   },
+   "labels": [
+    "nova"
+   ],
+   "cam": {
+    "subject": "nova",
+    "lift": 0.25,
+    "mode": "behind",
+    "from": [
+     20,
+     12,
+     2.4
+    ],
+    "to": [
+     20,
+     12,
+     2.2
+    ]
+   },
+   "speed": 1
+  },
+  {
+   "id": "t54-kimi-hit",
+   "beats": 3,
+   "sim": {
+    "tick": 28936
+   },
+   "labels": [
+    "kimi"
+   ],
+   "cam": {
+    "subject": "kimi",
+    "mode": "from:nova",
+    "from": [
+     22,
+     18,
+     4.2
+    ],
+    "to": [
+     22,
+     18,
+     5.2
+    ]
+   },
+   "speed": 1
+  },
+  {
+   "id": "hermes-6",
+   "beats": 5,
+   "sim": {
+    "tick": 29313
+   },
+   "labels": "none",
+   "cam": {
+    "subject": "hermes",
+    "eye": {
+     "at": "drop",
+     "offset": [
+      -8,
+      7,
+      8
+     ]
+    },
+    "fov": [
+     55,
+     55
+    ]
+   },
+   "speed": 1
+  },
+  {
+   "id": "t55-nova-hit",
+   "beats": 3,
+   "sim": {
+    "tick": 29894
+   },
+   "labels": [
+    "nova"
+   ],
+   "cam": {
+    "subject": "nova",
+    "mode": "from:kimi",
+    "from": [
+     22,
+     18,
+     4.2
+    ],
+    "to": [
+     22,
+     18,
+     5.2
+    ]
+   },
+   "speed": 1
+  },
+  {
+   "id": "t58-nova-face",
+   "beats": 4,
+   "sim": {
+    "tick": 30775
+   },
+   "labels": [
+    "nova"
+   ],
+   "cam": {
+    "subject": "nova",
+    "lift": 0.55,
+    "mode": "from:kimi",
+    "from": [
+     20,
+     5,
+     1.6
+    ],
+    "to": [
+     20,
+     5,
+     1.3
+    ],
+    "fov": [
+     36,
+     36
+    ]
+   },
+   "speed": 1
+  },
+  {
+   "id": "t58-nova-aim",
+   "beats": 4,
+   "sim": {
+    "tick": 30919
+   },
+   "labels": [
+    "nova",
+    "kimi"
+   ],
+   "cam": {
+    "subject": "nova",
+    "lift": 0.4,
+    "mode": "behind",
+    "from": [
+     12,
+     18,
+     2.6
+    ],
+    "to": [
+     12,
+     18,
+     1.8
+    ],
+    "fov": [
+     40,
+     40
+    ]
+   },
+   "speed": 1
+  },
+  {
+   "id": "needle-up",
+   "beats": 4,
+   "sim": "hold",
+   "labels": "none",
+   "dj": {
+    "needle": [
+     1,
+     0
+    ]
+   },
+   "cam": {
+    "subject": "dj",
+    "local": [
+     -0.45,
+     1.25,
+     0.6
+    ],
+    "mode": "stage",
+    "from": [
+     28,
+     30,
+     1.25
+    ],
+    "to": [
+     35,
+     34,
+     1.6
+    ],
+    "fov": [
+     40,
+     40
+    ],
+    "clear": false
+   }
+  },
+  {
+   "id": "t58-rocket",
+   "beats": 6,
+   "sim": {
+    "tick": 31063
+   },
+   "labels": "none",
+   "cam": {
+    "subject": "shell",
+    "mode": "chase",
+    "from": [
+     8,
+     18,
+     2.6
+    ],
+    "to": [
+     8,
+     18,
+     3.2
+    ]
+   },
+   "speed": 0.6944
+  },
+  {
+   "id": "t58-kimi-hit",
+   "beats": 6,
+   "sim": {
+    "tick": 31213
+   },
+   "speed": 0.35,
+   "labels": [
+    "kimi"
+   ],
+   "cam": {
+    "subject": "kimi",
+    "mode": "from:nova",
+    "from": [
+     22,
+     16,
+     3.8
+    ],
+    "to": [
+     22,
+     16,
+     4.6
+    ]
+   }
+  },
+  {
+   "id": "t58-kimi-tomb",
+   "beats": 6,
+   "sim": {
+    "tick": 31371
+   },
+   "labels": [
+    "kimi"
+   ],
+   "cam": {
+    "subject": "kimi",
+    "hold": true,
+    "mode": "from:nova",
+    "from": [
+     55,
+     20,
+     2.8
+    ],
+    "to": [
+     55,
+     20,
+     2.3
+    ],
+    "fov": [
+     36,
+     36
+    ]
+   },
+   "speed": 1
+  },
+  {
+   "id": "dawn-survivors",
+   "beats": 6,
+   "sim": "hold",
+   "time": 0.12,
+   "labels": [
+    "nova",
+    "deepseek"
+   ],
+   "bar": true,
+   "cam": {
+    "subject": "nova",
+    "lift": 0.45,
+    "mode": "from:dj",
+    "from": [
+     150,
+     12,
+     3.6
+    ],
+    "to": [
+     150,
+     12,
+     3
+    ]
+   }
+  },
+  {
+   "id": "needle-down",
+   "beats": 6,
+   "sim": "hold",
+   "labels": "none",
+   "dj": {
+    "needle": [
+     0,
+     1
+    ]
+   },
+   "time": 0.12,
+   "cam": {
+    "subject": "dj",
+    "local": [
+     -0.45,
+     1.25,
+     0.6
+    ],
+    "mode": "stage",
+    "from": [
+     35,
+     34,
+     1.6
+    ],
+    "to": [
+     28,
+     30,
+     1.25
+    ],
+    "fov": [
+     40,
+     40
+    ],
+    "clear": false
+   }
+  },
+  {
+   "id": "end",
+   "beats": 8,
+   "sim": "hold",
+   "title": "end",
+   "fadeIn": 0.8,
+   "labels": "none",
+   "bar": true,
+   "cam": {
+    "subject": "island",
+    "from": [
+     200,
+     25,
+     40
+    ],
+    "to": [
+     212,
+     28,
+     40
+    ]
+   }
+  }
+ ]
+}
